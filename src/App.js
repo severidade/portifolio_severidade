@@ -3,14 +3,12 @@ import './Reset.css';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 
-class App extends React.Component {
-  render() {
-    return (
-      <>
-        <Navbar />
-      </>
-    );
-  }
+function App() {
+  return (
+    <>
+      <Navbar />
+    </>
+  );
 }
 
 export default App;
