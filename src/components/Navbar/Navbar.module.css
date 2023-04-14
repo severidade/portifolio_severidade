@@ -1,3 +1,39 @@
+.navbar_container {
+  position: fixed;
+  width: var(--grid_nav_width);
+  min-height: 582px;
+  background-color: var(--cor_primaria_light);
+  padding: var(--grid_gap) 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: var(--grid_gap);
+  z-index: 9;
+}
+
+.logotipo {
+  font-family: 'Jost', sans-serif;
+  text-transform: uppercase;
+  font-size: 38px;
+  writing-mode: tb-rl;
+  transform: rotate(-180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 200;
+}
+
+.logotipo > span {
+  font-weight: 800;
+}
+
+.contexto_pais, .contexto_cidade {
+  font-family: 'Italiana', serif;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+}
+
 .container_social {
   width: 100%;
   display: flex;
@@ -6,10 +42,7 @@
   justify-content: center;
 }
 
-.social_linkedin,
-.social_github,
-.social_codpen,
-.social_behance {
+.linkedin, .github, .codpen, .behance {
   display: block;
   width: 50px;
   height: 50px;
@@ -20,7 +53,7 @@
   background-repeat: no-repeat;
 }
 
-.social_linkedin { background-image: url(../../img/icon/linkedin.svg);}
-.social_github { background-image: url(../../img/icon/GitHub-Mark-64px.png);}
-.social_codpen { background-image: url(../../img/icon/codpen.svg);}
-.social_behance { background-image: url(../../img/icon/behance.svg);}
+.linkedin { background-image: url(../../img/icon/linkedin.svg);}
+.github { background-image: url(../../img/icon/GitHub-Mark-64px.png);}
+.codpen { background-image: url(../../img/icon/codpen.svg);}
+.behance { background-image: url(../../img/icon/behance.svg);}

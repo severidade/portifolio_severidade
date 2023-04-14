@@ -1,4 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Italiana&family=Jost:wght@200;800&family=Vollkorn:ital,wght@1,700&display=swap');
+/* font-family: 'Barlow', sans-serif;
+font-family: 'Italiana', serif;
+font-family: 'Jost', sans-serif;
+font-family: 'Vollkorn', serif; */
+
 :root {
   --grid_nav_width: 90px;
   --grid_gap: 20px;
+
+  /*Primaria*/
+  --cor_primaria_dark:  black;
+  --cor_primaria_light: white;
+}
+
+body {
+  background: var(--cor_primaria_dark);
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
 }
