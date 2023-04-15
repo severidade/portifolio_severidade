@@ -1,0 +1,29 @@
+.about_container {
+  padding: var(--grid_gap) var(--grid_gap) var(--grid_gap) calc( var(--grid_nav_width) + (var(--grid_gap)*2));
+  min-height: 50vh;
+  background-color: var(--cor_primaria_light);
+}
+
+
+.container_picture {
+  width: 100px;
+  height: 100px;
+  margin-bottom: var(--grid_gap);
+  position: relative;
+  overflow: hidden;
+}
+
+.container_picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.about_container h2::after {
+  content: "01";
+  font-family: 'Jost', sans-serif;
+  position: absolute;
+  left: -20px;
+  font-size: 12px;
+  font-weight: 800;
+}
