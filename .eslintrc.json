@@ -3,6 +3,9 @@
         "browser": true,
         "es2021": true
     },
+    "globals": {
+        "require": true
+    },
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended"
