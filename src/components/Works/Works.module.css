@@ -1,0 +1,23 @@
+.works_container {
+  padding: var(--grid_gap) var(--grid_gap) var(--grid_gap) calc( var(--grid_nav_width) + (var(--grid_gap)*2));
+  min-height: 50vh;
+  /* background-color: var(--cor_primaria_light_gray); */
+  background-color: burlywood;
+  position: relative;
+}
+
+.works {
+  width: 100%;
+}
+
+.container_work_picture {
+  width: 100%;
+  height: calc( 100vw - (var(--grid_nav_width) + (var(--grid_gap)*3)));
+  overflow: hidden;
+}
+
+.container_work_picture > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

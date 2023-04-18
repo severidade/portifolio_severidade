@@ -5,6 +5,7 @@ import Navbar from './components/Navbar/Navbar';
 import Content from './data/Content';
 import About from './components/About/About';
 import Skills from './components/Skills/Skills';
+import Works from './components/Works/Works';
 
 export default function App(){
   return (
@@ -12,6 +13,7 @@ export default function App(){
       <Navbar content={ Content } />
       <About content={ Content } />
       <Skills content={ Content }/>
+      <Works />
     </>
   );
 }
