@@ -7,15 +7,10 @@ export default function Works() {
 
   return(
     <div className={ styles.works_container }>
-      <h2>Trabalhos</h2>
+      <h2>O que eu faço</h2>
       <div className={ styles.works}>
-        <div className='work'>
-          <figure className={ styles.container_work_picture }>
-            <img 
-              src={ img }
-              alt="foto de Marco Severo"
-            />
-          </figure>
+        <div className={ styles.work }>
+
           <div className='about'>
             <div className='work_stack'>Front_end</div>
             <h3 className='work_title'>Sistema Solar</h3>
@@ -40,12 +35,18 @@ export default function Works() {
               </li>
             </ul>
             <div>
-              <p>Esta aplicação React, desenvolvida com componentes de classe, lista todos os planetas do Sistema Solar e também algumas das missões espaciais mais conhecidas. Nela exercitei o uso de props e composição de componentes, conceitos fundamentais no desenvolvimento de aplicações React.</p>
+              <p>Esta aplicação React, desenvolvida com componentes de classe, lista todos os planetas do Sistema Solar e também algumas das missões espaciais mais conhecidas.</p>
             </div>
             
           </div>
+          <figure className={ styles.container_work_picture }>
+            <img 
+              src={ img }
+              alt="foto de Marco Severo"
+            />
+          </figure>
         </div>
-        <div className='work'>
+        {/* <div className='work'>
           <figure className={ styles.container_work_picture }>
             <img 
               src={ img }
@@ -80,7 +81,7 @@ export default function Works() {
             </div>
             
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   )

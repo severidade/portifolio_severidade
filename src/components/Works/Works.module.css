@@ -6,14 +6,35 @@
   position: relative;
 }
 
+
+.works_container h2::after {
+  content: "03";
+  font-family: 'Jost', sans-serif;
+  position: absolute;
+  left: -20px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
 .works {
   width: 100%;
 }
 
+.work {
+  border: solid 1px black;
+  position: relative;
+  height: calc( ((100vw - (var(--grid_nav_width) + (var(--grid_gap)*3))) * 1/2) + (var(--grid_gap)*2));
+  z-index: 3;
+}
+
 .container_work_picture {
-  width: 100%;
-  height: calc( 100vw - (var(--grid_nav_width) + (var(--grid_gap)*3)));
+  width: calc( (100vw - (var(--grid_nav_width) + (var(--grid_gap)*3))) * 1/2) ;
+  height: calc( (100vw - (var(--grid_nav_width) + (var(--grid_gap)*3))) * 1/2);
   overflow: hidden;
+  position: absolute;
+  left: calc(var(--grid_gap) * -1);
+  top: var(--grid_gap);
+  z-index: -1;
 }
 
 .container_work_picture > img {
