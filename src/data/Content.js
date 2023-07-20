@@ -23,11 +23,11 @@ const Content = {
   },
   about: {
     img: Avatar,
-    description:" <p>Minha <strong>trajetória profissional</strong> teve início aproximadamente a <strong>20 anos</strong> atrás como Designer Gráfico voltado para produtos impressos.</p><p>A migração para a <strong>área de tecnologia</strong> ocorreu através do desenvolvimento de interfaces atuando como <strong>UI/UX Designer</strong>.</p><p>A <strong>paixão por programação</strong> veio naturalmente pois comecei a me interessar por codar as interfaces que desenvolvia.</p>",
+    description:" <p>Com mais de 20 anos de experiência como <strong>Designer Gráfico</strong> especializado em produtos impressos, migrei para a área de tecnologia, focando no desenvolvimento de interfaces atuando como <strong>UI/UX Designer</strong>. Meu interesse pela programação e sua capacidade de transformar conceitos visuais em experiências interativas me levou a explorar o mundo do <strong>desenvolvimento front-end</strong>, onde pude unir minha experiência em design com habilidades de codificação para criar interfaces envolventes e intuitivas. A <strong>união entre design e programação</strong> tornou-se meu diferencial, permitindo-me oferecer soluções inovadoras e altamente funcionais aos meus clientes.</p>",
   },
   skills: {
-    front_end: "HTML5, CSS3, Javascript, React, Redux.",
-    back_end: "Javascript, MySQL, MongoDB, Node.JS",
+    front_end: "HTML5, CSS3, Javascript, React, Redux e Testes Automatizados com RTL.",
+    back_end: "MySQL, MongoDB, Node.JS",
     others: "UI/UX Design, Git/Github, Figma, Photoshop, Ilustrator, Slack, Desenvolvimento ágil (Notion, Trello)"
   }
 }
