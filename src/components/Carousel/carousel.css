@@ -1,0 +1,112 @@
+.container_carousel {
+  height: 75vh;
+  background-color: violet;
+}
+
+.slick-slide {
+  /* height: 70vh; */
+  border: solid 1px;
+  position: relative;
+}
+
+.laje {
+  background-image: url(./img/laje/purpurina.gif);
+  width: 100%;
+  height: 70vh;
+  display: grid !important;
+  grid-template-columns: var(--grid_nav_width) repeat(2, 2fr);
+  grid-template-rows: auto;
+  overflow: hidden;
+}
+
+.container_banner {
+  grid-column: 2 / 4;
+  height: 70vh;
+  position: relative;
+}
+
+.banner, .banner::before, .banner::after, .letreiro, .letreiro::after, .pandeiro, .pandeiro::after{
+  background-size: 55vh;
+  background-repeat: no-repeat;
+  height: 100%;
+  position: absolute;
+}
+
+.banner {
+  position: relative;
+  width: calc(100% + var(--grid_nav_width));
+  /* height: 100%; */
+  background-image: url('./img/laje/fundo_palmeiras.png');
+  background-position: top center;
+  /* background-size: 80%; */
+  /* background-repeat: no-repeat; */
+  /* position: absolute; */
+  left: 50%;
+  transform: translateX(-50% );
+  top: 0;
+}
+
+.banner::before {
+  content: "";
+  /* position: absolute; */
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* height: 100%; */
+  background-image: url('./img/laje/banner_geral.png');
+  background-position: top center;
+  /* background-size: 80%; */
+  /* background-repeat: no-repeat; */
+}
+
+.banner::after {
+  content: "";
+  /* position: absolute; */
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* height: 100%; */
+  background-image: url('./img/laje/banner_inferior.gif');
+  background-position: top center;
+  top: 34.5vh;
+  /* background-size: 80%; */
+  /* background-repeat: no-repeat; */
+}
+
+.letreiro {
+  width: calc(100% + var(--grid_nav_width));
+  height: 110px; 
+  background-image: url('./img/laje/letreiro_banner.png');
+  left: 50%;
+  top: 9.3vh;
+  z-index: 3;
+  background-position: top center;
+  transform: translateX(-50% );
+}
+
+.letreiro::after {
+  content: '';
+  background-image: url(./img/laje/letreiro_neon.gif);
+  background-position: top center;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.pandeiro {
+  width: calc(100% + var(--grid_nav_width));
+  height: 30vh; 
+  background-image: url('./img/laje/pandeiro.gif');
+  left: 50%;
+  top: 23vh;
+  z-index: 3;
+  background-position: top center;
+  transform: translateX(-50% );
+  background-size: 30vh;
+}
+
+.slick-prev {
+  display: none !important;
+}
