@@ -1,19 +1,15 @@
 import React from 'react';
 import './Reset.css';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
-import Content from './data/Content';
-import About from './components/About/About';
-import Skills from './components/Skills/Skills';
-import Works from './components/Works/Works';
+
+import Home from './pages/Home';
+
 
 export default function App(){
   return (
-    <>
-      <Navbar content={ Content } />
-      <About content={ Content } />
-      <Skills content={ Content }/>
-      <Works />
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+    </Routes>
   );
 }
