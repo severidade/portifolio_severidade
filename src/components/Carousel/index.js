@@ -26,22 +26,17 @@ export default function Carousel() {
         {/* Slide 1 */}
         <div className='laje'>
           <div className='container_banner'>
-            <div className='banner'></div>
-            <div className='letreiro'></div>
-            <div className='pandeiro'></div>
-            {/* <figure className='banner'>
-              <img className='banner_01' src={ banner_palmeiras } alt='Banner' />
-              <img className='banner_02'src={ banner } alt='Banner' />
-              <img className='banner_03'src={ banner_inferior } alt='Banner' />
-            </figure> */}
+            <div className='banner'/>
+            <div className='letreiro'/>
+            <div className='pandeiro'/>
           </div>
-          <h3>Slide 1</h3>
-          <p>Conteúdo do slide 1</p>
         </div>
         {/* Slide 2 */}
-        <div>
-          <h3>Slide 2</h3>
-          <p>Conteúdo do slide 2</p>
+        <div className='vereda'>
+          <div className='container_banner'>
+            <div className='banner_vereda'/>
+            <div className='logo_vereda'/>
+          </div>
         </div>
         {/* Slide 3 */}
         <div>

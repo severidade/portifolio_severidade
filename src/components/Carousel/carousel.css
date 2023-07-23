@@ -4,11 +4,16 @@
 }
 
 .slick-slide {
-  /* height: 70vh; */
-  /* border: solid 1px; */
   position: relative;
 }
 
+.container_banner {
+  grid-column: 2 / 4;
+  height: 70vh;
+  position: relative;
+}
+
+/* -------------- SLIDE LAJE ------------ */
 .laje {
   background-image: url(./img/laje/purpurina.gif);
   width: 100%;
@@ -17,12 +22,6 @@
   grid-template-columns: var(--grid_nav_width) repeat(2, 2fr);
   grid-template-rows: auto;
   overflow: hidden;
-}
-
-.container_banner {
-  grid-column: 2 / 4;
-  height: 70vh;
-  position: relative;
 }
 
 .banner, .banner::before, .banner::after, .letreiro, .letreiro::after, .pandeiro, .pandeiro::after{
@@ -122,6 +121,82 @@
   background-size: 25vh;
   top: 6vh;
 }
+
+/* -------------- SLIDE LAJE ------------ */
+.vereda {
+  width: 100%;
+  height: 70vh;
+  display: grid !important;
+  grid-template-columns: var(--grid_nav_width) repeat(2, 2fr);
+  grid-template-rows: auto;
+  overflow: hidden;
+  background: url(./img/vereda/folhas1.svg) no-repeat, url(./img/vereda/folhas2.svg) no-repeat, url(./img/vereda/bg.png) repeat fixed rgb(203, 190, 168);
+  background-position: -234px -367px, right 200px, center;
+  background-blend-mode: overlay, overlay, normal;
+  background-size: 750px, 600px, auto;
+}
+
+.banner_vereda {
+  background-size: 39vh;
+  background-repeat: no-repeat;
+  height: 100%;
+  position: absolute;
+}
+
+.banner_vereda {
+  position: relative;
+  width: 100vw;
+  background-image: url('./img/vereda/banner.png');
+  background-position: top center;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+}
+
+.banner_vereda::before {
+  content: "";
+  z-index: 2;
+  left: 0;
+  top: 0;
+  background-size: 39vh;
+  background-repeat: no-repeat;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  background-image: url('./img/vereda/arvoredo.png');
+  background-position: top center;
+}
+
+.banner_vereda::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./img/vereda/rio.png');
+  background-position: top center;
+  top: 6vh;
+  background-size: 34vh;
+  background-repeat: no-repeat;
+}
+
+.logo_vereda {
+  background-size: 25.5vh;
+  background-repeat: no-repeat;
+  height: 100%;
+  position: absolute;
+  /* position: relative; */
+  width: 100vw;
+  background-image: url('./img/vereda/logo.png');
+  /* background-color: tomato; */
+  background-position: top center;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+}
+
 
 .slick-prev, .slick-next, .slick-dots {
   display: none !important;
