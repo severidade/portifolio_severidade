@@ -40,3 +40,18 @@
   left: 0;
   background-color: black;
 }
+
+.download {
+  background: black;
+  border: none;
+  height: 40px;
+  width: 200px;
+  color: white;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 800;
+  padding: 10px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  cursor: pointer;
+}

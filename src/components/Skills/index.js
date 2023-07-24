@@ -2,6 +2,9 @@ import React from 'react';
 import styles from './skills.module.css';
 import PropTypes from 'prop-types';
 
+import curriculo from './data/curriculo.pdf';
+
+
 export default function Skills(props) {
   const { content } = props;
 
@@ -15,8 +18,13 @@ export default function Skills(props) {
       <h3 className={ styles.skill }><strong>Outros</strong></h3>
       <p> { content.skills.others } </p>
 
-      <a href="/data/curriculo.pdf" download>
-        <button>Baixar Currículo</button>
+      <a
+        href={curriculo}
+        download="marco_severo"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <button className={ styles.download }>Baixar Currículo</button>
       </a>
     </div>
   )
