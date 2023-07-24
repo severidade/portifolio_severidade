@@ -14,10 +14,6 @@ export default function Skills(props) {
       <p> { content.skills.back_end } </p>
       <h3 className={ styles.skill }><strong>Outros</strong></h3>
       <p> { content.skills.others } </p>
-
-      <a href="/data/curriculo.pdf" download>
-        <button>Baixar Currículo</button>
-      </a>
     </div>
   )
 }
