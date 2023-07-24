@@ -24,7 +24,7 @@ export default function Skills(props) {
         target="_blank"
         rel="noreferrer"
       >
-        <button>Download curriculo</button>
+        <button className={ styles.download }>Baixar Currículo</button>
       </a>
     </div>
   )
