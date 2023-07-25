@@ -3,11 +3,6 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import "./carousel.css";
 
-// import banner_palmeiras from "./img/laje/fundo_palmeiras.png";
-// import banner from "./img/laje/banner_geral.png";
-// import banner_inferior from "./img/laje/banner_inferior.gif";
-
-
 export default function Carousel() {
 
   const settings = {
@@ -39,9 +34,14 @@ export default function Carousel() {
           </div>
         </div>
         {/* Slide 3 */}
-        <div>
-          <h3>Slide 3</h3>
-          <p>Conteúdo do slide 3</p>
+        <div className='easy_cooking'>
+          <div className='container_banner'>
+            <div className='banner_easy_cooking'></div>
+            <div className='container_logo_easy_cooking'> 
+              <p className='logo_easy_cooking'>easy<strong>cooking</strong></p>
+              <p className="subtitle">the best recipe app</p>
+            </div>
+          </div>
         </div>
       </Slider>
     </div>
