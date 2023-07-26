@@ -266,13 +266,11 @@
   transform: translateY(-26px);
 }
 
-
 .slick-prev, .slick-next {
   display: none !important;
 }
 
 .slick-dots {
-  /* background-color: tomato; */
   display: flex;
   justify-content: center;
   width: 100%;
@@ -284,4 +282,20 @@
   align-items: center;
   gap: 20px;
   padding-left: var(--grid_nav_width);
+}
+
+.slick-dots button {
+  background: none !important;
+  border: none;
+  width: 15px;
+  height: 15px;
+  border: solid 2px black;
+  border-radius: 15px;
+  transition: ease-in-out 1s;
+  overflow: hidden;
+  text-indent: -1000px;
+}
+
+.slick-dots .slick-active button {
+  width: 30px;
 }

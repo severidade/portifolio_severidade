@@ -27,21 +27,63 @@
   font-weight: 800;
 }
 
-.contexto_pais, .contexto_cidade {
+.contexto_pais {
   font-family: 'Italiana', serif;
   text-transform: uppercase;
   text-align: center;
   position: relative;
 }
 
-.contexto_cidade {
-  background-color: gray;
+.menu {
+  position: relative;
+  /* background-color: rgba(128, 128, 128, 0.179); */
   width: 40px;
   height: 40px;
   border-radius: 5px;
   left: 50%;
  
   transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu .dot {
+  width: 30px;
+  height: 6px;
+  background-color: black;
+  border-radius: 5px;
+  position: relative;
+}
+
+.menu .dot::before {
+  content: "";
+  top: -10px;
+  width: 20px;
+  height: 6px;
+  background-color: black;
+  border-radius: 5px;
+  position: absolute;
+}
+
+.menu .dot::after {
+  content: "";
+  top: 10px;
+  width: 15px;
+  height: 6px;
+  background-color: black;
+  border-radius: 5px;
+  position: absolute;
+}
+
+.dot, .dot::before, .dot::after {
+  transition: ease-in-out 1s;
+}
+
+.menu:hover .dot,
+.menu:hover .dot::before,
+.menu:hover .dot::after  {
+  width: 30px;
 }
 
 .container_social {
