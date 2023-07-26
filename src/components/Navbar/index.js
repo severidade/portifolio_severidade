@@ -8,7 +8,9 @@ export default function Navbar(props) {
 
   return(
     <div className={ styles.navbar_container }>
-        <div className={ styles.contexto_cidade }></div>
+        <div className={ styles.menu}>
+          <div className={ styles.dot }/>
+        </div>
         <h1 className={ styles.logotipo }>Marco <span>Severo</span></h1>
         <ul className={ styles.container_social }>
           {content.navbar.social_links?.map((item) =>(
