@@ -83,7 +83,6 @@
 .menu:hover .dot,
 .menu:hover .dot::before,
 .menu:hover .dot::after  {
-  /* background-color: tomato; */
   width: 30px;
 }
 
