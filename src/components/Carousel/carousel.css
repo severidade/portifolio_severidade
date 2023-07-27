@@ -287,8 +287,8 @@
 .slick-dots button {
   background: none !important;
   border: none;
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   border: solid 2px black;
   border-radius: 15px;
   transition: ease-in-out 1s;
