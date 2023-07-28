@@ -1,6 +1,8 @@
 import React, { useState, useEffect }  from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
+import MobileDetect from 'mobile-detect';
+
 
 import './Navbar.css';
 
@@ -8,6 +10,11 @@ import './Navbar.css';
 export default function Navbar(props) {
   const { content } = props;
   const [menuOpen, setmenuOpen] = useState(false);
+
+  const isMobileDevice = () => {
+    const md = new MobileDetect(window.navigator.userAgent);
+    return md.mobile() !== null;
+  };
   
   const toggleMenu = () => {
     setmenuOpen(!menuOpen);
@@ -16,6 +23,13 @@ export default function Navbar(props) {
   // useEffect(() => {
   //   document.body.style.overflow = menuOpen ? 'hidden' : 'unset';
   // }, [menuOpen]);
+
+  useEffect(() => {
+    if (isMobileDevice()) {
+      document.body.style.overflow = menuOpen ? 'hidden' : 'unset';
+      // alert('Este é um dispositivo móvel!');
+    }
+  }, [menuOpen]);
 
   const disableScrollOnWheel = (event) => {
     event.preventDefault();
@@ -63,19 +77,19 @@ export default function Navbar(props) {
           </ul>
           <div className="contexto_pais">Brasil</div>
       </div>
-      <div
+      <nav
         className={`menu_options ${menuOpen ? 'open' : ''}`}
       >
-        <a
+        <button
           className='close_menu'
           onClick={ toggleMenu }
         >
           close
-        </a>
+        </button>
         <NavLink to="/" onClick={toggleMenu}>Home</NavLink>
         <NavLink to="/projects" onClick={ toggleMenu }>Projetos</NavLink>
         <NavLink to="/contact" onClick={ toggleMenu }>Contato</NavLink>
-      </div>
+      </nav>
     </>
   )
 }
