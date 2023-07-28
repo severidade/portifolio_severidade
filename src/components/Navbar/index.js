@@ -9,7 +9,7 @@ import './Navbar.css';
 
 export default function Navbar(props) {
   const { content } = props;
-  const [menuOpen, setmenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const isMobileDevice = () => {
     const md = new MobileDetect(window.navigator.userAgent);
@@ -17,7 +17,7 @@ export default function Navbar(props) {
   };
   
   const toggleMenu = () => {
-    setmenuOpen(!menuOpen);
+    setMenuOpen(!menuOpen);
   };
 
   // useEffect(() => {
@@ -27,7 +27,7 @@ export default function Navbar(props) {
   useEffect(() => {
     if (isMobileDevice()) {
       document.body.style.overflow = menuOpen ? 'hidden' : 'unset';
-      // alert('Este é um dispositivo móvel!');
+      // isso bloqueia o scroll vertical no celular
     }
   }, [menuOpen]);
 
