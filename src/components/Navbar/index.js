@@ -20,23 +20,17 @@ export default function Navbar(props) {
     setMenuOpen(!menuOpen);
   };
 
-  // useEffect(() => {
-  //   document.body.style.overflow = menuOpen ? 'hidden' : 'unset';
-  // }, [menuOpen]);
-
-  useEffect(() => {
-    if (isMobileDevice()) {
-      document.body.style.overflow = menuOpen ? 'hidden' : 'unset';
-      // isso bloqueia o scroll vertical no celular
-    }
-  }, [menuOpen]);
-
   const disableScrollOnWheel = (event) => {
     event.preventDefault();
   }
   
 
   useEffect(() => {
+    if (isMobileDevice()) {
+      document.body.style.overflow = menuOpen ? 'hidden' : 'unset';
+      // isso bloqueia o scroll vertical no celular
+    }
+
     if (menuOpen) {
       document.body.addEventListener('wheel', disableScrollOnWheel, { passive: false });
     } else {
