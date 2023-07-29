@@ -20,6 +20,7 @@ export default function Carousel() {
       <Slider {...settings}>
         {/* Slide 1 */}
         <div className='laje'>
+          <button className='show_project'> ver projeto</button>
           <div className='container_banner'>
             <div className='banner'/>
             <div className='letreiro'/>
