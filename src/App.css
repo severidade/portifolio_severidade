@@ -53,3 +53,14 @@ strong {
   height: 100%;
   object-fit: contain;
 }
+
+.container_project{
+  background-color: tomato;
+  display: grid;
+  grid-template-columns: var(--grid_nav_width) repeat(2, 2fr);
+}
+
+.about_project{
+  grid-column: 2 / 4;
+  padding: 0 20px;
+}
