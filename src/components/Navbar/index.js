@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import MobileDetect from 'mobile-detect';
 import './Navbar.css';
 
@@ -65,7 +65,12 @@ export default function Navbar(props) {
         >
           <div className=" dot" />
         </div>
-        <h1 className="logotipo">Marco <span>Severo</span></h1>
+        <Link 
+          to={'/'}
+          className="logotipo"
+        >
+          Marco <span>Severo</span>
+        </Link>
         <ul className=" container_social">
           {content.navbar.social_links?.map((item) => (
             <li key={item.name} >
