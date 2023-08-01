@@ -302,13 +302,20 @@
 }
 
 .show_project {
-  grid-column: 2 /4;
-  z-index: 3;
-  grid-column: 2 /4;
-  z-index: 3;
-  grid-row: 1 / 2;
   height: 30px;
   width: 100px;
-  bottom: 0;
+  position: absolute;
+  top: 58vh;
   left: 50%;
+  z-index: 3;
+  transform: translateX(-50%);
+  background-color: black;
+  color: white;
+  font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

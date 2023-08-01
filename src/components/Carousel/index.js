@@ -2,6 +2,8 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import "./carousel.css";
+import { Link } from 'react-router-dom';
+import projectList from '../../data/Projects';
 
 export default function Carousel() {
 
@@ -20,11 +22,17 @@ export default function Carousel() {
       <Slider {...settings}>
         {/* Slide 1 */}
         <div className='laje'>
-          <button className='show_project'> ver projeto</button>
           <div className='container_banner'>
             <div className='banner'/>
             <div className='letreiro'/>
             <div className='pandeiro'/>
+            <Link 
+              to={ `/projects/${projectList[0].slug}`}
+              // key={post.slug.current}
+              className='show_project'
+            >
+              Ver Projeto
+            </Link>
           </div>
         </div>
         {/* Slide 2 */}
@@ -32,6 +40,13 @@ export default function Carousel() {
           <div className='container_banner'>
             <div className='banner_vereda'/>
             <div className='logo_vereda'/>
+            <Link 
+              to={ `/projects/${projectList[1].slug}`}
+              // key={post.slug.current}
+              className='show_project'
+            >
+              Ver Projeto
+            </Link>
           </div>
         </div>
         {/* Slide 3 */}
@@ -42,6 +57,13 @@ export default function Carousel() {
               <p className='logo_easy_cooking'>easy<strong>cooking</strong></p>
               <p className="subtitle">the best recipe app</p>
             </div>
+            <Link 
+              to={ `/projects/${projectList[2].slug}`}
+              // key={post.slug.current}
+              className='show_project'
+            >
+              Ver Projeto
+            </Link>
           </div>
         </div>
       </Slider>
