@@ -55,9 +55,11 @@ strong {
 }
 
 .container_project{
-  background-color: tomato;
+  background-color: var(--cor_primaria_dark);
   display: grid;
   grid-template-columns: var(--grid_nav_width) repeat(2, 2fr);
+  color: #f0f0f0;
+  min-height: 100vh;
 }
 
 .about_project{

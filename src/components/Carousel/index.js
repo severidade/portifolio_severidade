@@ -66,6 +66,7 @@ export default function Carousel() {
             </Link>
           </div>
         </div>
+        {/* Slide 4 */}
         <div className='the_box_blog'>
           <div className='container_banner'>
             <div className='banner_the_box_blog'></div>
@@ -75,6 +76,23 @@ export default function Carousel() {
             </div> */}
             <Link 
               to={ `/projects/${projectList[3].slug}`}
+              // key={post.slug.current}
+              className='show_project'
+            >
+              Ver Projeto
+            </Link>
+          </div>
+        </div>
+        {/* Slide 5 */}
+        <div className='solar_system'>
+          <div className='container_banner'>
+            <div className='banner_solar_system'></div>
+            {/* <div className='container_logo_easy_cooking'> 
+              <p className='logo_easy_cooking'>easy<strong>cooking</strong></p>
+              <p className="subtitle">the best recipe app</p>
+            </div> */}
+            <Link 
+              to={ `/projects/${projectList[4].slug}`}
               // key={post.slug.current}
               className='show_project'
             >
