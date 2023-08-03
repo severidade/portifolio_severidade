@@ -294,6 +294,60 @@
   background-position: left center;
   background-size: cover; */
 }
+
+.video_background_container {
+  height: 100vh;
+  max-width: 100vw;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+}
+
+.video_background {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video_background:before {
+  background-image: linear-gradient(to bottom right, #0100ec, #fb36f4);
+  content: '';
+  height: 100%;
+  mix-blend-mode: hard-light;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.video_background iframe {
+  filter: grayscale(1);
+  mix-blend-mode: hard-light;
+  object-fit: cover;
+  transform: rotate(90deg);
+}
+
+@media screen and ( min-width : 900px ) {
+
+  .video_background iframe {
+    transform: rotate(0deg);
+  }
+}
+
+@media screen and ( min-width : 600px ) and ( min-height : 200px ) {
+
+  .video_background iframe {
+    transform: rotate(0deg);
+  }
+}
+
+
+
+
+/* --------------fim do solar system ------------ */
 .slick-prev, .slick-next {
   display: none !important;
 }

@@ -4,6 +4,8 @@ import 'slick-carousel/slick/slick.css';
 import "./carousel.css";
 import { Link } from 'react-router-dom';
 import projectList from '../../data/Projects';
+import ReactPlayer from 'react-player';
+
 
 export default function Carousel() {
 
@@ -87,10 +89,20 @@ export default function Carousel() {
         <div className='solar_system'>
           <div className='container_banner'>
             <div className='banner_solar_system'></div>
-            {/* <div className='container_logo_easy_cooking'> 
-              <p className='logo_easy_cooking'>easy<strong>cooking</strong></p>
-              <p className="subtitle">the best recipe app</p>
-            </div> */}
+            <ReactPlayer
+              className='video_background'
+              // url="https://www.youtube.com/watch?v=ztVV54sPOns&t=46m36s"
+              // url="https://www.youtube.com/watch?v=ztVV54sPOns&t=6m32s"
+               url="https://www.youtube.com/watch?v=ztVV54sPOns&t=10m9s"
+              // url="https://www.youtube.com/watch?v=kiNSWFEyDQM&t=795s"
+              playing
+              loop
+              muted
+              controls={ false }
+              speed="2"
+              width="300%"
+              height="150%"
+            />
             <Link 
               to={ `/projects/${projectList[4].slug}`}
               // key={post.slug.current}
