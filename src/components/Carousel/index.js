@@ -93,8 +93,8 @@ export default function Carousel() {
               className='video_background'
               // url="https://www.youtube.com/watch?v=ztVV54sPOns&t=46m36s"
               // url="https://www.youtube.com/watch?v=ztVV54sPOns&t=6m32s"
-               url="https://www.youtube.com/watch?v=ztVV54sPOns&t=10m9s"
-              // url="https://www.youtube.com/watch?v=kiNSWFEyDQM&t=795s"
+              //  url="https://www.youtube.com/watch?v=ztVV54sPOns&t=10m9s"
+              url="https://www.youtube.com/watch?v=kiNSWFEyDQM&t=25m9s"
               playing
               loop
               muted
