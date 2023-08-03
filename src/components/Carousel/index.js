@@ -87,22 +87,29 @@ export default function Carousel() {
         </div>
         {/* Slide 5 */}
         <div className='solar_system'>
-          <div className='container_banner'>
-            <div className='banner_solar_system'></div>
+          {/* aqui tem o grid  */}
+          <div className='video_background_container'>
             <ReactPlayer
-              className='video_background'
-              // url="https://www.youtube.com/watch?v=ztVV54sPOns&t=46m36s"
-              // url="https://www.youtube.com/watch?v=ztVV54sPOns&t=6m32s"
-              //  url="https://www.youtube.com/watch?v=ztVV54sPOns&t=10m9s"
-              url="https://www.youtube.com/watch?v=kiNSWFEyDQM&t=25m9s"
-              playing
-              loop
-              muted
-              controls={ false }
-              speed="2"
-              width="300%"
-              height="150%"
-            />
+                className='video_background'
+                // url="https://www.youtube.com/watch?v=ztVV54sPOns&t=46m36s"
+                // url="https://www.youtube.com/watch?v=ztVV54sPOns&t=6m32s"
+                 url="https://www.youtube.com/watch?v=ztVV54sPOns&t=10m9s"
+                // url="https://www.youtube.com/watch?v=y9PTNTSpGJs"
+                playing
+                loop
+                muted
+                controls={ false }
+                speed="2"
+                width="300%"
+                height="150%"
+              />
+          </div>
+          <div className='container_banner'>
+            {/* aqui posiciona */}
+
+            <div className='banner_solar_system'>
+              <h2>Solar System</h2>
+            </div>
             <Link 
               to={ `/projects/${projectList[4].slug}`}
               // key={post.slug.current}
