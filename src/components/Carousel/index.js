@@ -108,7 +108,7 @@ export default function Carousel() {
             {/* aqui posiciona */}
 
             <div className='banner_solar_system'>
-              <h2>Solar System</h2>
+              <h3 className='logo_solar'>Solar System</h3>
             </div>
             <Link 
               to={ `/projects/${projectList[4].slug}`}

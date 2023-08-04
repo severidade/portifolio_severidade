@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,300;1,400;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Barlow:wght@400;800&family=Bellefair&display=swap') ;
 
 .container_carousel {
   height: 70vh;
@@ -330,8 +330,23 @@
   transform: rotate(90deg);
 }
  
-.banner_solar_system { 
+/* .banner_solar_system { 
   background-color: tomato;
+} */
+
+.logo_solar {
+  color: white;
+  font-family: 'Bellefair' , serif;
+  font-size: 45px;
+  font-weight: 400;
+  letter-spacing: 7px;
+  text-align: center;
+  text-shadow: -2px 0 2px #03051f;;
+  text-transform: uppercase;
+  /* background-color: tomato; */
+  position: absolute;
+  top: 35vh;
+  transform: translateY(-50px);
 }
 
 
