@@ -16,3 +16,18 @@
   height: 500px;
   background-color: violet;
 }
+
+.acelerar {
+  background-color: tomato;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.acelerar li {
+  background-color: olive;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

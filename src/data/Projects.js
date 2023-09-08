@@ -6,7 +6,7 @@ const Projects = [
     slug: 'laje',
     short_description:'lorem ipsum dolor sit amet, consect',
     description:
-      'al sit amet fermentum lorem lore',
+      '<p>al sit amet fermentum lorem lore</p>',
     img: Avatar,
     id: 1,
   },
@@ -23,7 +23,7 @@ const Projects = [
     slug: 'easycooking',
     short_description:'lorem ipsum dolor sit amet, consect',
     description:
-      'EasyCooking é uma aplicação React que funciona como um livro de receitas digital, permitindo que os usuários explorem uma variedade de receitas de coquetéis e refeições. Ao fornecer uma interface intuitiva e fácil de usar, os usuários podem descobrir novas receitas, seguir instruções passo a passo e até mesmo salvar suas receitas favoritas ou finalizadas para referência futura. Com a ajuda das APIs TheCocktailDB e TheMealDB, a aplicação oferece um amplo e diversificado banco de dados de receitas para tornar a experiência culinária ainda mais emocionante e inspiradora. Para facilitar a descoberta de receitas desenvolvemos uma série de filtos por nacionalidade, ingredientes, nomes de receitas e muito mais.',
+      '<p>EasyCooking é uma aplicação React que funciona como um livro de receitas digital, permitindo que os usuários explorem uma variedade de receitas de coquetéis e refeições. Ao fornecer uma interface intuitiva e fácil de usar, os usuários podem descobrir novas receitas, seguir instruções passo a passo e até mesmo salvar suas receitas favoritas ou finalizadas para referência futura. Com a ajuda das APIs TheCocktailDB e TheMealDB, a aplicação oferece um amplo e diversificado banco de dados de receitas para tornar a experiência culinária ainda mais emocionante e inspiradora. Para facilitar a descoberta de receitas desenvolvemos uma série de filtos por nacionalidade, ingredientes, nomes de receitas e muito mais.</p>',
     img: Avatar,
     id: 3,
   },
