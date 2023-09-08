@@ -15,7 +15,7 @@ export default function Project() {
   return(
     <main className='container_project'>
       <Navbar content={ Content } />
-      <ProjectDetails currentProject={currentProject} />
+      <ProjectDetails currentProject={currentProject} projectList={projectList}/>
     </main>
   )
 }
