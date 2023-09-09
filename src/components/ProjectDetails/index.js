@@ -25,6 +25,10 @@ export default function ProjectDetails({ currentProject, projectList }) {
 
   const parse = require('html-react-parser');
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <div className={ styles.about_project }>
       <div className={ styles.image_projeto } ></div> 
@@ -55,13 +59,19 @@ export default function ProjectDetails({ currentProject, projectList }) {
       </div>
       <ul className={ styles.acelerar }>
         <li key={previousProject.slug}>
-          <Link to={`/projects/${previousProject.slug}`}>
+          <Link 
+            to={`/projects/${previousProject.slug}`}
+            onClick={scrollToTop}  
+          >
             Projeto Anterior: {previousProject.title}
           </Link>
         </li>
 
         <li key={nextProject.slug}>
-          <Link to={`/projects/${nextProject.slug}`}>
+          <Link 
+            to={`/projects/${nextProject.slug}`}
+            onClick={scrollToTop}
+          >
             Próximo Projeto: {nextProject.title}
           </Link>
         </li>
