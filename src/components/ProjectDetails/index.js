@@ -5,11 +5,13 @@ import { Link } from 'react-router-dom';
 import styles from './ProjectDetails.module.css';
 
 export default function ProjectDetails({ currentProject, projectList }) {
-  const { title, description, slug } = currentProject;
-  console.log(slug)
-
-  // const filteredProjectList = projectList.filter((project) => project.slug !== slug);
-
+  const { 
+    title,
+    description,
+    slug,
+    deployLink,
+    githubLink,
+  } = currentProject;
 
   // Cria o next e o prev para a lista de projetos 
   const currentIndex = projectList.findIndex((project) => project.slug === slug);
@@ -28,20 +30,29 @@ export default function ProjectDetails({ currentProject, projectList }) {
       <div className={ styles.image_projeto } ></div> 
       <h1>{title}</h1>
       <div> {parse(description)} </div>
-      {/* 
-        <ul>
-          {projectList.map((project) => (
-            <li key={project.slug}>
-              <Link
-                to={ `/projects/${project.slug}`}
-              >
-                {project.title}
-              </Link>
-            </li>
-          ))}
-        </ul> 
-      */}
 
+      <div className={ styles.container_links }>     
+        {deployLink && deployLink.trim() !== '' && (
+          <a
+            className={ styles.btn_deploy } 
+            href={ deployLink } target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ver deploy
+          </a>
+        )}
+
+        {githubLink && githubLink.trim() !== '' && (
+          <a
+            className={ styles.btn_github } 
+            href={ githubLink } 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            Ver github
+          </a>
+        )}
+      </div>
       <ul className={ styles.acelerar }>
         <li key={previousProject.slug}>
           <Link to={`/projects/${previousProject.slug}`}>
@@ -66,6 +77,8 @@ ProjectDetails.propTypes = {
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     slug: PropTypes.string.isRequired,
+    deployLink: PropTypes.string.isRequired,
+    githubLink: PropTypes.string.isRequired,
   }).isRequired,
   projectList: PropTypes.arrayOf(
     PropTypes.shape({
