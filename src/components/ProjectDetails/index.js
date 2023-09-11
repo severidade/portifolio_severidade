@@ -9,14 +9,14 @@ export default function ProjectDetails({ currentProject, projectList }) {
   const { 
     title,
     description,
-    slug,
+    slug: slug_current,
     img,
     deployLink,
     githubLink,
   } = currentProject;
 
   // Cria o next e o prev para a lista de projetos 
-  const currentIndex = projectList.findIndex((project) => project.slug === slug);
+  const currentIndex = projectList.findIndex((project) => project.slug === slug_current );
   const totalProjects = projectList.length;
   
   const previousIndex = currentIndex === 0 ? totalProjects - 1 : currentIndex - 1;
