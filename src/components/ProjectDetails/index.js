@@ -3,20 +3,22 @@ import PropTypes from 'prop-types';
 
 import { Link } from 'react-router-dom';
 import styles from './ProjectDetails.module.css';
+import scrollToTop from '../../utils/scrollToTop';
 
 export default function ProjectDetails({ currentProject, projectList }) {
   const { 
     title,
     description,
     slug,
+    img,
     deployLink,
     githubLink,
   } = currentProject;
 
   // Cria o next e o prev para a lista de projetos 
   const currentIndex = projectList.findIndex((project) => project.slug === slug);
-
   const totalProjects = projectList.length;
+  
   const previousIndex = currentIndex === 0 ? totalProjects - 1 : currentIndex - 1;
   const nextIndex = currentIndex === totalProjects - 1 ? 0 : currentIndex + 1;
 
@@ -25,15 +27,14 @@ export default function ProjectDetails({ currentProject, projectList }) {
 
   const parse = require('html-react-parser');
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
 
   return (
     <div className={ styles.about_project }>
-      <div className={ styles.image_projeto } ></div> 
       <h1>{title}</h1>
       <div> {parse(description)} </div>
+      <div className={ styles.image_projeto } >
+        <img src={ img } alt={ title } />
+      </div> 
 
       <div className={ styles.container_links }>     
         {deployLink && deployLink.trim() !== '' && (
@@ -57,26 +58,28 @@ export default function ProjectDetails({ currentProject, projectList }) {
           </a>
         )}
       </div>
-      <ul className={ styles.acelerar }>
+
+      <ul className={ styles.project_navigation }>
         <li key={previousProject.slug}>
-          <Link 
+          <Link
+            className={styles.project_navigation_link}
             to={`/projects/${previousProject.slug}`}
-            onClick={scrollToTop}  
+            onClick={ scrollToTop }  
           >
-            Projeto Anterior: {previousProject.title}
+            {previousProject.title}
           </Link>
         </li>
 
         <li key={nextProject.slug}>
-          <Link 
+          <Link
+            className={styles.project_navigation_link}
             to={`/projects/${nextProject.slug}`}
-            onClick={scrollToTop}
+            onClick={ scrollToTop }
           >
-            Próximo Projeto: {nextProject.title}
+            {nextProject.title}
           </Link>
         </li>
       </ul>
-
     </div>
   );
 }
@@ -87,6 +90,7 @@ ProjectDetails.propTypes = {
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     slug: PropTypes.string.isRequired,
+    img: PropTypes.string.isRequired,
     deployLink: PropTypes.string.isRequired,
     githubLink: PropTypes.string.isRequired,
   }).isRequired,

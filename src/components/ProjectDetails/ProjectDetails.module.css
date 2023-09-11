@@ -13,15 +13,21 @@
 
 .image_projeto {
   width: 100%;
-  height: 500px;
+  height: 200px;
   background-color: violet;
 }
 
-.acelerar {
+.project_navigation {
   background-color: tomato;
   width: 100%;
   display: flex;
   justify-content: space-around;
+}
+
+.image_projeto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .acelerar li {
