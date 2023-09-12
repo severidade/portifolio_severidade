@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Link } from 'react-router-dom';
 import styles from './ProjectDetails.module.css';
-import scrollToTop from '../../utils/scrollToTop';
+import calculateProjectNavigation from '../../utils/calculateProjectNavigation';
+import ProjectNavigation from '../ProjectNavigation'
 
 export default function ProjectDetails({ currentProject, projectList }) {
   const { 
@@ -15,16 +15,8 @@ export default function ProjectDetails({ currentProject, projectList }) {
     githubLink,
   } = currentProject;
 
-  // Cria o next e o prev para a lista de projetos 
-  const currentIndex = projectList.findIndex((project) => project.slug === slug_current );
-  const totalProjects = projectList.length;
+  const { previousProject, nextProject } = calculateProjectNavigation( slug_current, projectList );
   
-  const previousIndex = currentIndex === 0 ? totalProjects - 1 : currentIndex - 1;
-  const nextIndex = currentIndex === totalProjects - 1 ? 0 : currentIndex + 1;
-
-  const previousProject = projectList[previousIndex];
-  const nextProject = projectList[nextIndex];
-
   const parse = require('html-react-parser');
 
 
@@ -58,29 +50,8 @@ export default function ProjectDetails({ currentProject, projectList }) {
           </a>
         )}
       </div>
-
-      <ul className={ styles.project_navigation }>
-        <li key={previousProject.slug}>
-          <Link
-            className={styles.project_navigation_link}
-            to={`/projects/${previousProject.slug}`}
-            onClick={ scrollToTop }  
-          >
-            {previousProject.title}
-          </Link>
-        </li>
-
-        <li key={nextProject.slug}>
-          <Link
-            className={styles.project_navigation_link}
-            to={`/projects/${nextProject.slug}`}
-            onClick={ scrollToTop }
-          >
-            {nextProject.title}
-          </Link>
-        </li>
-      </ul>
-    </div>
+      <ProjectNavigation previousProject={previousProject} nextProject={nextProject} />
+  </div>
   );
 }
 

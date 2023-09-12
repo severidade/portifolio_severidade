@@ -1,0 +1,14 @@
+.project_navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 0;
+}
+
+.project_navigation_link {
+  background-color: tomato;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
