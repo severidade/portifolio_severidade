@@ -9,10 +9,10 @@ export default function Projects() {
   return(
     <main className='container_project_list'>
       <Navbar content={ Content } />
-      <div className='project_list'>
-        <h1>Página de projetos</h1>
-        < ProjectList projectList={ projectList }/>
-      </div>
+      < ProjectList projectList={ projectList }/>
+      {/* <div className='project_list'>
+      
+      </div> */}
     </main>
   )
 }

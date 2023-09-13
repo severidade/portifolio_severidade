@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { NavLink, Link } from 'react-router-dom';
 import MobileDetect from 'mobile-detect';
 import './Navbar.css';
+import scrollToTop from '../../utils/scrollToTop';
 
 export default function Navbar(props) {
   const { content } = props;
@@ -68,6 +69,7 @@ export default function Navbar(props) {
         <Link 
           to={'/'}
           className="logotipo"
+          onClick={scrollToTop}
         >
           Marco <span>Severo</span>
         </Link>

@@ -1,0 +1,17 @@
+.project_list {
+  grid-column: 2 / 4;
+  padding: 0 20px;
+}
+
+
+.project {
+  padding: 20px 0;
+  background-color: tomato;
+  margin-bottom: 20px;
+}
+
+.image_projeto_mini {
+  width: 100px;
+  height: 100px;
+  background-color: violet;
+}
