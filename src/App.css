@@ -12,6 +12,8 @@ font-family: 'Vollkorn', serif; */
   --cor_primaria_dark:  black;
   --cor_primaria_light: white;
   --cor_primaria_light_gray: #f0f0f0;
+
+  --banner_height_desktop: 100vh;
 }
 
 body {

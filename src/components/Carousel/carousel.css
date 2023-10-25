@@ -5,7 +5,7 @@
 
 .container_carousel {
   height: 70vh;
-  background-color: violet;
+  background-color: rgb(211, 27, 27);
 }
 
 .slick-slide {
@@ -419,4 +419,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and ( min-width : 900px ) {
+
+  .container_carousel {
+    height: var(--banner_height_desktop);
+    width: 50vw;
+    position: fixed;
+  }
+
+  .container_banner {
+    height: var(--banner_height_desktop);
+  }
+
+  .laje, .vereda, .easy_cooking, .the_box_blog, .solar_system  {
+    height: var(--banner_height_desktop);
+  }
+
+  .show_project {
+    top: 70vh;
+  }
+
+  .slick-dots{
+    bottom: 20vh;
+  }
 }
