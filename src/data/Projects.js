@@ -69,9 +69,33 @@ const Projects = [
     description:'<p>Esse é um projeto criado com o objetivo de apresentar pacotes de cicloturismo em Minas Gerais de uma agência fictícia. O projeto foi desenvolvido usando React e tem como objetivo ser uma plataforma de apresentação desses pacotes.</p><p>Os componentes desta aplicação foram formatados com CSS Modules.Este conceito permite a escrita do CSS de forma independente para cada módulo da aplicação. Com isso a customização dos estilos acontece individualmente sem o risco de que os estilos de um componente afete os outros.</p><p>Esta interface é responsiva e foi desenvolvida utilizando a abordagem Mobile First pois prioriza as necessidades dos usuários em dispositivos móveis. Ao implementar o conceito de Mobile First, é importante levar em consideração as limitações técnicas dos dispositivos móveis, como a tela pequena, interação com toques e ou recursos limitados - como processadores lentos e conexões de dados limitada.</p>',
     img: Avatar,
     id: 6,
-    deployLink: 'biciminas.severidade.com.br/',
+    deployLink: 'https://biciminas.severidade.com.br/',
     githubLink: 'https://github.com/severidade/minas_rotas_react',
   },
+  {
+    title: 'SuperTrunfo Card Manager',
+    slug: 'supertrunfo',
+    short_description:'ainda nao uso isso',
+    description:'<p>Esta aplicação foi desenvolvida com o objetivo de criar e gerenciar cartas para um jogo no estilo SuperTrunfo, demonstrando a implementação das seguintes habilidades:</p><ul><li>Leitura do estado de um componente e uso desse estado para alterar o que é exibido no navegador.</li><li>Inicialização de um componente com um estado pré-definido.</li><li>Atualização do estado de um componente em tempo real.</li><li>Captura de eventos utilizando a sintaxe do React.</li><li>Criação de formulários utilizando a sintaxe JSX.</li></ul><h3>Importância deste projeto</h3><p>Quando lidamos com informações, existem quatro operações fundamentais que são cruciais para o sucesso de uma aplicação: Criar (create), Ler (read), Atualizar (update) e Excluir (delete). O projeto SuperTrufo representa o meu primeiro passo na realização de algumas dessas operações, com foco principal na criação, leitura e exclusão de informações. A aplicação foi desenvolvida quando estudava na Trybe e foi originalmente criada como um componentes de classe que foram posteriormente transformados em um componentes funcionais.</p><p>Utilizei o Material UI para formatar alguns componentes de formulário.</p>',
+    img: Avatar,
+    id: 6,
+    deployLink: 'https://tryunfo.severidade.com.br/',
+    githubLink: 'https://github.com/severidade/tryunfo',
+  },
+  {
+    title: 'Wallet',
+    slug: 'wallet',
+    short_description:'ainda nao uso isso',
+    description:'<p>Esta aplicação foi desenvolvida utilizando React e Redux, consumindo dados da API do awesomeapi para realizar a conversão de moedas. O objetivo principal do projeto é criar uma carteira de controle de gastos com a capacidade de converter para real gastos feitos em outras moedas.</p><h3>Habilidades Demonstradas</h3><p>Neste projeto, tive a oportunidade de demonstrar as seguintes habilidades:</p><ul><li>Configurar e conectar o Redux a uma aplicação React</li><li>Criar ações assíncronas na aplicação React que fazem uso de Redux</li></ul>',
+    img: Avatar,
+    id: 6,
+    deployLink: 'http://wallet.severidade.com.br/',
+    githubLink: 'https://github.com/severidade/wallet_project',
+  },
+
+
+  
+
 ];
 
 export default Projects; 
