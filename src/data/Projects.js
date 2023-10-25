@@ -69,6 +69,8 @@ const Projects = [
     description:'<p>Esse é um projeto criado com o objetivo de apresentar pacotes de cicloturismo em Minas Gerais de uma agência fictícia. O projeto foi desenvolvido usando React e tem como objetivo ser uma plataforma de apresentação desses pacotes.</p><p>Os componentes desta aplicação foram formatados com CSS Modules.Este conceito permite a escrita do CSS de forma independente para cada módulo da aplicação. Com isso a customização dos estilos acontece individualmente sem o risco de que os estilos de um componente afete os outros.</p><p>Esta interface é responsiva e foi desenvolvida utilizando a abordagem Mobile First pois prioriza as necessidades dos usuários em dispositivos móveis. Ao implementar o conceito de Mobile First, é importante levar em consideração as limitações técnicas dos dispositivos móveis, como a tela pequena, interação com toques e ou recursos limitados - como processadores lentos e conexões de dados limitada.</p>',
     img: Avatar,
     id: 6,
+
+
     deployLink: 'https://biciminas.severidade.com.br/',
     githubLink: 'https://github.com/severidade/minas_rotas_react',
   },
