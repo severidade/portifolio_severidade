@@ -1,6 +1,12 @@
 const projectImages = {
+  7: {
+    avatar: require('../img/works/cicloturismo_agencia/cicloturismo_avatar.png'),
+    gallery: [
+      require('../img/works/cicloturismo_agencia/cicloturismo_horizontal.png'),
+    ],
+  },
   8: {
-    avatar: require('../img/works/cicloturismo_agencia/Sistema solar.jpg'),
+    avatar: require('../img/works/super_trunfo/super_trunfo_avatar.png'),
     gallery: [
       require('../img/works/cicloturismo_agencia/sistema_solar.png'),
       require('../img/works/cicloturismo_agencia/textura.jpg'),

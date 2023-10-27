@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import styles from './Works.module.css';
 
 export default function Works({ projectList, projectImages }) {
-  const projectIDsToDisplay = [ 7, 8 ,9];
+  const projectIDsToDisplay = [ 7, 9, 8];
   const filteredProjects = projectList.filter(project => projectIDsToDisplay.includes(project.id));
 
   return (
@@ -14,18 +14,21 @@ export default function Works({ projectList, projectImages }) {
 
         {Array.isArray(filteredProjects) && filteredProjects.length > 0 ? (
           filteredProjects.map((project) => (
-            <div key={project.id}>
+            <div 
+              className={ styles.work }
+              key={project.id}
+            >
               <Link to={`/projects/${project.slug}`}>
-                <h3>{project.title}</h3>
-                <p>{project.short_description}</p>
-
-                <figure>
+                <figure className={ styles.work_avatar }>
                   {projectImages[project.id] && projectImages[project.id].avatar ? (
                     <img src={projectImages[project.id].avatar} alt={`${project.title} - Avatar`} />
                   ) : (
                     <p>Sem 📷</p>
                   )}
                 </figure>
+                <h3>{project.title}</h3>
+                <p>{project.short_description}</p>
+
 
                 {/* {projectImages[project.id] && projectImages[project.id].gallery && projectImages[project.id].gallery.map((image, index) => (
                   <img key={index} src={image} alt={`${project.title} - Image ${index}`} />

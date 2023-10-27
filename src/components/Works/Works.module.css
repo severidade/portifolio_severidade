@@ -16,6 +16,18 @@
   font-weight: 800;
 }
 
+.work {
+  border: solid 1px;
+  padding: var(--grid_gap);
+}
+
+.work_avatar {
+  width: calc( (100vw - (var(--grid_gap)*2)) - (var(--grid_nav_width) + (var(--grid_gap)*3))) ;
+  height: calc( 70vw - (var(--grid_nav_width) + (var(--grid_gap)*3)));
+  overflow: hidden;
+  position: relative;
+}
+
 /* .works {
   width: 100%;
 } */
