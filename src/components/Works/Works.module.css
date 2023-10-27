@@ -18,7 +18,8 @@
 
 .work {
   border: solid 1px;
-  padding: var(--grid_gap);
+  padding: var(--grid_gap)
+  ;
 }
 
 .work_avatar {
