@@ -23,23 +23,23 @@ body {
   font-weight: 400;
 }
 
-/* h2 {
+h2 {
   font-family: 'Vollkorn', serif;
   font-weight: 700;
   font-size: 30px;
   position: relative;
   margin-bottom: var(--grid_gap);
-} */
+}
 
-h2 {
+/* h2 {
   font-family: "WT Skrappa Roman";
   font-size: 75px;
-  /* font-size: clamp(5rem,2.9107rem + 8.5714vw,10.625rem); */
-  font-size: clamp(4rem,3rem + 8vw,6rem);
+  font-size: clamp(5rem,2.9107rem + 8.5714vw,10.625rem);
+  font-size: clamp(4rem,2.5rem + 8vw,6rem);
   position: relative;
   margin-bottom: var(--grid_gap);
   letter-spacing: 1px;
-}
+} */
 
 p {
   font-size: 16px;
@@ -48,6 +48,12 @@ p {
 
 strong {
   font-weight: 700;
+}
+
+.container_main{
+  width: 100vw;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .slider {

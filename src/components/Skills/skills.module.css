@@ -1,7 +1,9 @@
 .skills_container {
-  padding: var(--grid_gap) var(--grid_gap) var(--grid_gap) calc( var(--grid_nav_width) + (var(--grid_gap)*2));
+  padding: calc(var(--grid_gap)*3) var(--grid_gap) calc(var(--grid_gap)*3) calc( var(--grid_nav_width) + (var(--grid_gap)*2));
   min-height: 50vh;
-  background-color: var(--cor_primaria_light_gray);
+  background: url(../../img/noise.png), var(--cor_primaria_light_gray);
+  background: black;
+  color: #cbcbcb  !important;
 }
 
 .skills_container h2::after {
@@ -28,7 +30,7 @@
   height: 4px;
   position: absolute;
   bottom: 0;
-  border-bottom: 1px black solid;
+  border-bottom: 1px #cbcbcb solid;
 }
 
 .skill::after {
@@ -38,15 +40,15 @@
   position: absolute;
   bottom: -2px;
   left: 0;
-  background-color: black;
+  background-color: #cbcbcb;
 }
 
 .download {
-  background: black;
+  background: #f0efef;
   border: none;
   height: 40px;
   width: 200px;
-  color: white;
+  color: black;
   font-family: 'Barlow', sans-serif;
   font-weight: 800;
   padding: 10px;
