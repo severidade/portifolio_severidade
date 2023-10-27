@@ -1,4 +1,7 @@
 .works_container {
+
+  --inner_gap:  10px;
+
   padding: calc(var(--grid_gap)*2) var(--grid_gap) var(--grid_gap) calc( var(--grid_nav_width) + (var(--grid_gap)*2));
   min-height: 50vh;
   background-color: var(--cor_primaria_light_gray);
@@ -17,16 +20,22 @@
 }
 
 .work {
-  border: solid 1px;
-  padding: var(--grid_gap)
-  ;
+  /* border: solid 1px; */
+  padding: var(--inner_gap);
+  margin-bottom: 20px;
+  background-color: white;
 }
 
 .work_avatar {
-  width: calc( (100vw - (var(--grid_gap)*2)) - (var(--grid_nav_width) + (var(--grid_gap)*3))) ;
+  width: calc( (100vw - (var(--inner_gap)*2)) - (var(--grid_nav_width) + (var(--grid_gap)*3))) ;
   height: calc( 70vw - (var(--grid_nav_width) + (var(--grid_gap)*3)));
   overflow: hidden;
   position: relative;
+  padding-bottom: calc(var(--inner_gap) *2);
+}
+
+.short_description {
+  margin-bottom: 0;
 }
 
 /* .works {

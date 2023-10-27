@@ -13,7 +13,7 @@ const projectImages = {
     ],
   },
   9: {
-    avatar: require('../img/works/wallet/bebidas.gif'),
+    avatar: require('../img/works/wallet/re.png'),
     gallery: [
       require('../img/works/wallet/bebidas.gif'),
       require('../img/works/wallet/01.png')
