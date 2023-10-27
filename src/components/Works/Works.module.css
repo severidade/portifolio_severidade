@@ -48,6 +48,6 @@
   .works_container {
     width: 50vw;
     margin-left: 50vw;
-    padding: var(--grid_gap) calc( var(--grid_nav_width) + (var(--grid_gap)*2)) var(--grid_gap) calc( var(--grid_nav_width) + (var(--grid_gap)*2));
+    padding: calc( var(--grid_nav_width) + (var(--grid_gap)*2));
   }
 }

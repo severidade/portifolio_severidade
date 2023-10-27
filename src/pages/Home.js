@@ -1,5 +1,6 @@
 import React from 'react';
 import Content from '../data/Content';
+import projectList from '../data/Projects';
 
 import Navbar from '../components/Navbar';
 import Carousel from '../components/Carousel';
@@ -17,7 +18,7 @@ export default function Home() {
       <Carousel />
       <About content={ Content } />
       <Skills content={ Content } />
-      <Works />
+      <Works projectList={ projectList }/>
     </main>
   )
 }
