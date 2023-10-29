@@ -4,7 +4,7 @@ const Projects = [
   {
     title: 'L.A.J.E',
     slug: 'laje',
-    short_description:'lorem ipsum dolor sit amet, consect',
+    short_description:'Escrever',
     description:
       '<p>al sit amet fermentum lorem lore</p>',
     img: Avatar,
@@ -85,7 +85,7 @@ const Projects = [
   {
     title: 'Wallet',
     slug: 'wallet',
-    short_description:'Carteira digital de controle de gastos que converte valores de outras moedas para o Real.',
+    short_description:'Carteira digital para controle de gastos que converte valores de outras moedas para o Real.',
     description:'<p>Esta aplicação foi desenvolvida utilizando React e Redux, consumindo dados da API do awesomeapi para realizar a conversão de moedas. O objetivo principal do projeto é criar uma carteira de controle de gastos com a capacidade de converter para real gastos feitos em outras moedas.</p><h3>Habilidades Demonstradas</h3><p>Neste projeto, tive a oportunidade de demonstrar as seguintes habilidades:</p><ul><li>Configurar e conectar o Redux a uma aplicação React</li><li>Criar ações assíncronas na aplicação React que fazem uso de Redux</li></ul>',
     img: Avatar,
     id: 9,
