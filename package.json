@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "html-react-parser": "^3.0.15",
     "mobile-detect": "^1.4.5",
     "parse": "^4.0.1",
