@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import styles from './Works.module.css';
 
 export default function Works({ projectList, projectImages }) {
-  const projectIDsToDisplay = [ 1, 2, 3, 4, 5, 7, 8,9];
+  const projectIDsToDisplay = [ 7, 8,9];
   const filteredProjects = projectList.filter(project => projectIDsToDisplay.includes(project.id));
 
   return (

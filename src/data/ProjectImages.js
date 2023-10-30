@@ -43,7 +43,7 @@ const projectImages = {
     ],
   },
   9: {
-    avatar: require('../img/works/wallet/wallet_avatar.jpg'),
+    avatar: require('../img/works/wallet/wallet_avatar.png'),
     gallery: [
       require('../img/works/wallet/bebidas.gif'),
       require('../img/works/wallet/01.png')
