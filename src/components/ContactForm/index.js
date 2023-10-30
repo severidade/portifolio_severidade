@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import styles from './reactemail.module.css';
+import styles from './contactForm.module.css';
 import emailjs from '@emailjs/browser';
 
 
-export default function ReactEmail() {
+export default function ContactForm() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
