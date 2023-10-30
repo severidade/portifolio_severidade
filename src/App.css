@@ -68,7 +68,8 @@ strong {
 }
 
 .container_project, .container_project_list, .container_contact {
-  background-color: var(--cor_primaria_dark);
+  /* background-color: var(--cor_primaria_dark); */
+  background: url('./img/noise.png'), var(--cor_primaria_light_gray);
   display: grid;
   grid-template-columns: var(--grid_nav_width) repeat(2, 2fr);
   color: #f0f0f0;
