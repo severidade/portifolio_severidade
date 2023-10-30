@@ -16,6 +16,10 @@ export default function CardProject({ project, projectImage }) {
         </figure>
         <h3>{project.title}</h3>
         <p className={styles.short_description}>{project.short_description}</p>
+
+        {/* {projectImages[project.id] && projectImages[project.id].gallery && projectImages[project.id].gallery.map((image, index) => (
+          <img key={index} src={image} alt={`${project.title} - Image ${index}`} />
+        ))} */}
       </Link>
     </div>
   );

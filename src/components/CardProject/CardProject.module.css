@@ -1,7 +1,6 @@
 .work {
   /* border: solid 1px; */
   padding: var(--inner_gap);
-  margin-bottom: 20px;
   background-color: white;
 }
 

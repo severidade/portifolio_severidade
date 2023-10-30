@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 import styles from './SectionProjects.module.css';
+import CardProject from '../CardProject';
 
 export default function SectionProjects({ projectList, projectImages }) {
-  const projectIDsToDisplay = [ 7, 8,9 ];
+  const projectIDsToDisplay = [ 1, 2, 3, 4, 5, 6, 7, 8,9 ];
   const filteredProjects = projectList.filter(project => projectIDsToDisplay.includes(project.id));
 
   return (
@@ -14,28 +14,11 @@ export default function SectionProjects({ projectList, projectImages }) {
 
         {Array.isArray(filteredProjects) && filteredProjects.length > 0 ? (
           filteredProjects.map((project) => (
-            <div 
-              className={ styles.work }
-              key={project.id}
-            >
-              <Link to={`/projects/${project.slug}`}>
-                <figure className={ styles.work_avatar }>
-                  {projectImages[project.id] && projectImages[project.id].avatar ? (
-                    <img src={projectImages[project.id].avatar} alt={`${project.title} - Avatar`} />
-                  ) : (
-                    <p>Sem 📷</p>
-                  )}
-                </figure>
-                <h3>{project.title}</h3>
-                <p className={ styles.short_description }>{project.short_description}</p>
-
-
-                {/* {projectImages[project.id] && projectImages[project.id].gallery && projectImages[project.id].gallery.map((image, index) => (
-                  <img key={index} src={image} alt={`${project.title} - Image ${index}`} />
-                ))} */}
-
-              </Link>
-            </div>
+            <CardProject
+            project={project}
+            projectImage={projectImages[project.id]}
+            key={project.id}
+            />
           ))
         ) : (
           <p>Nenhum projeto disponível</p>
