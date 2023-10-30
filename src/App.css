@@ -67,7 +67,7 @@ strong {
   align-items: center;
 }
 
-.container_project, .container_project_list {
+.container_project, .container_project_list, .container_contact {
   background-color: var(--cor_primaria_dark);
   display: grid;
   grid-template-columns: var(--grid_nav_width) repeat(2, 2fr);
