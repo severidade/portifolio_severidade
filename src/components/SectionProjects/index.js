@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import styles from './Works.module.css';
+import styles from './SectionProjects.module.css';
 
-export default function Works({ projectList, projectImages }) {
+export default function SectionProjects({ projectList, projectImages }) {
   const projectIDsToDisplay = [ 7, 8,9 ];
   const filteredProjects = projectList.filter(project => projectIDsToDisplay.includes(project.id));
 
@@ -46,7 +46,7 @@ export default function Works({ projectList, projectImages }) {
   );
 }
 
-Works.propTypes = {
+SectionProjects.propTypes = {
   projectList: PropTypes.array,
   projectImages: PropTypes.object.isRequired,
 };

@@ -7,7 +7,7 @@ import Navbar from '../components/Navbar';
 import Carousel from '../components/Carousel';
 import SectionAbout from '../components/SectionAbout';
 import SectionSkills from '../components/SectionSkills';
-import Works from '../components/Works';
+import SectionProjects from '../components/SectionProjects';
 
 // import avatarImage from '../img/works/mini/sistema_solar.png';
 
@@ -19,7 +19,7 @@ export default function Home() {
       <Carousel />
       <SectionAbout content={ Content } />
       <SectionSkills content={ Content } />
-      <Works projectList={ projectList } projectImages={ projectImages } />
+      <SectionProjects projectList={ projectList } projectImages={ projectImages } />
     </main>
   )
 }
