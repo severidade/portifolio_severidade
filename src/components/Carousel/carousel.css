@@ -444,4 +444,12 @@
   .slick-dots{
     bottom: 20vh;
   }
+
+  .logo_solar {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4.5vw;
+    line-height: 0.8;
+  }
 }
