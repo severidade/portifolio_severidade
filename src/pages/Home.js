@@ -5,7 +5,7 @@ import projectImages from '../data/ProjectImages';
 
 import Navbar from '../components/Navbar';
 import Carousel from '../components/Carousel';
-import About from '../components/About';
+import SectionAbout from '../components/SectionAbout';
 import Skills from '../components/Skills';
 import Works from '../components/Works';
 
@@ -17,7 +17,7 @@ export default function Home() {
     <main className='container_main'>
       <Navbar content={ Content } />
       <Carousel />
-      <About content={ Content } />
+      <SectionAbout content={ Content } />
       <Skills content={ Content } />
       <Works projectList={ projectList } projectImages={ projectImages } />
     </main>

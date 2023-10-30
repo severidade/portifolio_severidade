@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from './About.module.css';
+import styles from './SectionAbout.module.css';
 import PropTypes from 'prop-types';
 
 const parse = require('html-react-parser')
 
-export default function About(props) {
+export default function SectionAbout(props) {
   const { content } = props;
 
   return(
@@ -24,6 +24,6 @@ export default function About(props) {
   )
 }
 
-About.propTypes = {
+SectionAbout.propTypes = {
   content: PropTypes.object.isRequired,
 };
