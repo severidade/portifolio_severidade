@@ -1,11 +1,11 @@
 import React from 'react';
-import styles from './skills.module.css';
+import styles from './SectionSkills.module.css';
 import PropTypes from 'prop-types';
 
 import curriculo from './data/curriculo.pdf';
 
 
-export default function Skills(props) {
+export default function SectionSkills(props) {
   const { content } = props;
 
   return(
@@ -30,6 +30,6 @@ export default function Skills(props) {
   )
 }
 
-Skills.propTypes = {
+SectionSkills.propTypes = {
   content: PropTypes.object.isRequired,
 };

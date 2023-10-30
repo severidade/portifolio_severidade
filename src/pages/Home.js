@@ -6,7 +6,7 @@ import projectImages from '../data/ProjectImages';
 import Navbar from '../components/Navbar';
 import Carousel from '../components/Carousel';
 import SectionAbout from '../components/SectionAbout';
-import Skills from '../components/Skills';
+import SectionSkills from '../components/SectionSkills';
 import Works from '../components/Works';
 
 // import avatarImage from '../img/works/mini/sistema_solar.png';
@@ -18,7 +18,7 @@ export default function Home() {
       <Navbar content={ Content } />
       <Carousel />
       <SectionAbout content={ Content } />
-      <Skills content={ Content } />
+      <SectionSkills content={ Content } />
       <Works projectList={ projectList } projectImages={ projectImages } />
     </main>
   )
