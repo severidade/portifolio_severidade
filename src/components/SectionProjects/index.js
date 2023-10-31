@@ -4,7 +4,7 @@ import styles from './SectionProjects.module.css';
 import CardProject from '../CardProject';
 
 export default function SectionProjects({ projectList, projectImages }) {
-  const projectIDsToDisplay = [ 1, 2, 3, 4, 5, 6, 7, 8,9 ];
+  const projectIDsToDisplay = [ 6, 7, 8,9 ];
   const filteredProjects = projectList.filter(project => projectIDsToDisplay.includes(project.id));
 
   return (

@@ -29,6 +29,12 @@ const projectImages = {
       require('../img/works/cicloturismo_agencia/cicloturismo_horizontal.png'),
     ],
   },
+  6: {
+    avatar: require('../img/works/shopping_cart/shoppin_cart_avatar.png'),
+    gallery: [
+      require('../img/works/cicloturismo_agencia/cicloturismo_horizontal.png'),
+    ],
+  },
   7: {
     avatar: require('../img/works/cicloturismo_agencia/cicloturismo_avatar.png'),
     gallery: [

@@ -4,7 +4,7 @@ const Projects = [
   {
     title: 'L.A.J.E',
     slug: 'laje',
-    short_description:'Escrever',
+    short_description:'Landing com animações e experimentações de transição usando css e Javascript',
     description:
       '<p>al sit amet fermentum lorem lore</p>',
     img: Avatar,
