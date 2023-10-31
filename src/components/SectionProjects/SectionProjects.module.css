@@ -39,7 +39,7 @@
   align-items: center;
 }
 
-@media screen and (min-device-width: 480px) and (max-device-width: 899px) { 
+@media screen and (min-width: 480px) and (max-width: 899px) { 
   .works_content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -48,7 +48,7 @@
   }
 }
 
-@media screen and (min-device-width: 900px) and (max-device-width: 1350px)  {
+@media screen and (min-width: 900px) and (max-width: 1350px)  {
 
   .works_container {
     width: 50vw;
