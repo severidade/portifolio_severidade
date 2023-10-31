@@ -1,5 +1,8 @@
 .work {
   /* border: solid 1px; */
+  --inner_gap:  10px;
+
+
   padding: var(--inner_gap);
   background-color: white;
 }
@@ -11,12 +14,14 @@
   height: calc(((100vw - (var(--inner_gap)*2)) - (var(--grid_nav_width) + (var(--grid_gap)*3)) ) * 0.7 );
   overflow: hidden;
   position: relative;
-  padding-bottom: calc(var(--inner_gap) *2);
+  /* padding-bottom: calc(var(--inner_gap) *2); */
 }
 
-.work h3, .work p { color: black;}
+.work h3, .work p { color: black; }
 
-.work h3 { margin-bottom: var(--inner_gap);}
+.work h3 { padding: 20px 20px 10px 20px;}
+
+.work p { padding: 0 20px 20px;}
 
 .short_description {
   margin-bottom: 0;
@@ -26,6 +31,7 @@
 
   .work_avatar {
     width: 100%;
-    height: calc(((50vw - (var(--inner_gap)*2)) - (var(--grid_nav_width) + (var(--grid_gap)*3)) ) * 0.25 );
+    /* height: calc(((50vw - (var(--inner_gap)*2)) - (var(--grid_nav_width) + (var(--grid_gap)*3)) ) * 0.25 ); */
+    height: 250px;
   }
 }

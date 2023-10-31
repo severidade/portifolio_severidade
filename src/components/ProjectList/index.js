@@ -6,17 +6,19 @@ import styles from './ProjectList.module.css'
 export default function ProjectList({ projectList, projectImages }) {
     return (
       <main className={styles.project_list}>
-      {Array.isArray(projectList) && projectList.length > 0 ? (
-        projectList.map((project) => (
-          <CardProject
-            project={project}
-            projectImage={projectImages[project.id]}
-            key={project.id}
-          />
-        ))
-      ) : (
-        <p>Nenhum projeto disponível</p>
-      )}
+        <div className={ styles.project_list_container }>
+          {Array.isArray(projectList) && projectList.length > 0 ? (
+            projectList.map((project) => (
+              <CardProject
+                project={project}
+                projectImage={projectImages[project.id]}
+                key={project.id}
+              />
+            ))
+          ) : (
+            <p>Nenhum projeto disponível</p>
+          )}
+        </div>
     </main>
   );
 }
