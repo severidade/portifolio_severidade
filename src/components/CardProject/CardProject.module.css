@@ -2,36 +2,24 @@
   /* border: solid 1px; */
   --inner_gap:  10px;
 
-
   padding: var(--inner_gap);
   background-color: white;
 }
 
 .work_avatar {
   /* width: calc( (100vw - (var(--inner_gap)*2)) - (var(--grid_nav_width) + (var(--grid_gap)*3))) ; */
-  width: 100%;
   /* height: calc( 70vw - (var(--grid_nav_width) + (var(--grid_gap)*3))); */
-  height: calc(((100vw - (var(--inner_gap)*2)) - (var(--grid_nav_width) + (var(--grid_gap)*3)) ) * 0.7 );
+  /* height: calc(((100vw - (var(--inner_gap)*2)) - (var(--grid_nav_width) + (var(--grid_gap)*3)) ) * 0.7 ); */
+  /* padding-bottom: calc(var(--inner_gap) *2); */
+  width: 100%;
   overflow: hidden;
   position: relative;
-  /* padding-bottom: calc(var(--inner_gap) *2); */
 }
 
 .work h3, .work p { color: black; }
 
 .work h3 { padding: 20px 0px 10px 0px;}
 
-/* .work p { padding: 0 20px 20px;} */
-
 .short_description {
   margin-bottom: 0;
-}
-
-@media screen and ( min-width : 900px ) {
-
-  .work_avatar {
-    width: 100%;
-    /* height: calc(((50vw - (var(--inner_gap)*2)) - (var(--grid_nav_width) + (var(--grid_gap)*3)) ) * 0.25 ); */
-    height: 250px;
-  }
 }

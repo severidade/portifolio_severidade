@@ -9,19 +9,6 @@
   grid-gap: var(--grid_gap);
 }
 
-/* .project {
-  padding: 20px 0;
-  background-color: tomato;
-  margin-bottom: 20px;
-} */
-
-/* .image_projeto_mini {
-  width: 100px;
-  height: 100px;
-  background-color: violet;
-} */
-
-
 @media screen and ( min-width : 900px ) {
 
   /* .works_container {
