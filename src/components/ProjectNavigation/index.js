@@ -16,7 +16,13 @@ export default function ProjectNavigation({ previousProject, nextProject }) {
           {previousProject.title}
         </Link>
       </li>
-
+      <Link 
+          to="/projects"
+          onClick={scrollToTop}
+          className={ styles.find_out_more }
+        >
+          Veja todos os projetos
+      </Link>
       <li key={nextProject.slug}>
         <Link
           className={styles.project_navigation_link}
