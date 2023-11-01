@@ -17,7 +17,7 @@ export default function SectionAbout(props) {
           alt="foto de Marco Severo"
         />
       </figure>
-      <div>
+      <div className={ styles.about_description }>
         {parse(content.about.description)}
       </div>
     </div>

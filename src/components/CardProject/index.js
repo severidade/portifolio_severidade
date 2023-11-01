@@ -30,7 +30,7 @@ export default function CardProject({ project, projectImage }) {
           style={{ height: `${figureHeight}px` }}
         >
           {projectImage && projectImage.avatar ? (
-            <img src={projectImage.avatar} alt={`${project.title} - Avatar`} />
+            <img src={projectImage.avatar} alt={`📷 ${project.title} - Miniatura`} />
           ) : (
             <p>Sem 📷</p>
           )}

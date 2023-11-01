@@ -4,6 +4,12 @@
   background-color: var(--cor_primaria_light);
 }
 
+.about_description h3{
+  margin-bottom: var(--grid_gap);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+}
 
 .container_picture {
   width: 100px;
