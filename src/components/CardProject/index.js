@@ -2,23 +2,22 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styles from './CardProject.module.css';
+import calculateFigureHeight from '../../utils/calculateFigureHeight';
 
 export default function CardProject({ project, projectImage }) {
   const [figureHeight, setFigureHeight] = useState(0);
 
   useEffect(() => {
-    const calculateFigureHeight = () => {
-      const parentWidth = document.querySelector(`.${styles.work}`).offsetWidth;
-      const height = parentWidth * 0.50;
-      setFigureHeight(height);
-    };
+    calculateFigureHeight(styles, setFigureHeight);
 
-    calculateFigureHeight();
-
-    window.addEventListener('resize', calculateFigureHeight);
+    window.addEventListener('resize', () => {
+      calculateFigureHeight(styles, setFigureHeight);
+    });
 
     return () => {
-      window.removeEventListener('resize', calculateFigureHeight);
+      window.removeEventListener('resize', () => {
+        calculateFigureHeight(styles, setFigureHeight);
+      });
     };
   }, []);
 
