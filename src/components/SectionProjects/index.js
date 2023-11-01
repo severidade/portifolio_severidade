@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import scrollToTop from '../../utils/scrollToTop';
 
 export default function SectionProjects({ projectList, projectImages }) {
-  const projectIDsToDisplay = [ 6, 7, 8,9 ];
+  const projectIDsToDisplay = [ 6, 7, 8, 9 ];
   const filteredProjects = projectList.filter(project => projectIDsToDisplay.includes(project.id));
 
   return (
@@ -16,9 +16,9 @@ export default function SectionProjects({ projectList, projectImages }) {
         {Array.isArray(filteredProjects) && filteredProjects.length > 0 ? (
           filteredProjects.map((project) => (
             <CardProject
-            project={project}
-            projectImage={projectImages[project.id]}
-            key={project.id}
+              project={project}
+              projectImage={projectImages[project.id]}
+              key={project.id}
             />
           ))
         ) : (
