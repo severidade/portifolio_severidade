@@ -57,6 +57,7 @@ const Projects = [
     introduction_description: 
       '<p><strong>Esta aplicação React, desenvolvida com componentes de classe, lista todos os planetas do Sistema Solar e também algumas das missões espaciais mais conhecidas.</strong></p>',
     description:'<p>Neste trabalho exercitei o uso de <strong>props</strong> e <strong>composição de componentes</strong>, conceitos fundamentais no desenvolvimento de aplicações React.</p><p>O design dessa aplicação foi desenvolvido utilizando o conceito de <strong>Mobile First</strong>.</p><p>Para a criação do Background em vídeo usei a <strong>biblioteca ReactPlayer</strong>.</p>',
+    
     img: Avatar,
     id: 5,
     deployLink: 'http://solarsystem.severidade.com.br/',
