@@ -14,7 +14,7 @@ const Projects = [
     deployLink: 'https://severidade.com.br/laje/',
   },
   {
-    title: 'Sustentabilidade na Vereda',
+    title: 'Vereda',
     slug: 'vereda',
     short_description:'Landing Page responsiva em WordPress',
     introduction_description: 

@@ -13,15 +13,15 @@ const projectImages = {
   },
   3: {
     avatar: require('../img/works/app_receitas/app_receitas_avatar.png'),
-    // gallery: [
-    //   require('../img/works/cicloturismo_agencia/cicloturismo_horizontal.png'),
-    // ],
+    gallery: [
+      require('../img/works/app_receitas/app_receitas_avatar.png'),
+    ],
   },
   4: {
     avatar: require('../img/works/the_box/box_avatar.png'),
-    // gallery: [
-    //   require('../img/works/cicloturismo_agencia/cicloturismo_horizontal.png'),
-    // ],
+    gallery: [
+      require('../img/works/the_box/box_avatar.png'),
+    ],
   },
   5: {
     avatar: require('../img/works/sistema_solar/solar_avatar.png'),
