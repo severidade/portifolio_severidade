@@ -88,7 +88,11 @@ export default function ProjectDetails({ currentProject, projectList }) {
       </div>
 
 
-      <ProjectNavigation previousProject={previousProject} nextProject={nextProject} />
+      <ProjectNavigation 
+        previousProject={ previousProject } 
+        nextProject={ nextProject } 
+        projectImages={ ProjectImages }
+      />
   </div>
   );
 }

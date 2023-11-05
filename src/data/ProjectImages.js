@@ -13,15 +13,15 @@ const projectImages = {
   },
   3: {
     avatar: require('../img/works/app_receitas/app_receitas_avatar.png'),
-    // gallery: [
-    //   require('../img/works/cicloturismo_agencia/cicloturismo_horizontal.png'),
-    // ],
+    gallery: [
+      require('../img/works/app_receitas/app_receitas_avatar.png'),
+    ],
   },
   4: {
     avatar: require('../img/works/the_box/box_avatar.png'),
-    // gallery: [
-    //   require('../img/works/cicloturismo_agencia/cicloturismo_horizontal.png'),
-    // ],
+    gallery: [
+      require('../img/works/the_box/box_avatar.png'),
+    ],
   },
   5: {
     avatar: require('../img/works/sistema_solar/solar_avatar.png'),
@@ -36,10 +36,10 @@ const projectImages = {
     ],
   },
   7: {
-    avatar: require('../img/works/cicloturismo_agencia/cicloturismo_avatar.png'),
-    // gallery: [
-    //   require('../img/works/cicloturismo_agencia/cicloturismo_horizontal.png'),
-    // ],
+    avatar: require('../img/works/cicloturismo_agencia/cicloturismo.png'),
+    gallery: [
+      require('../img/works/cicloturismo_agencia/cicloturismo.png'),
+    ],
   },
   8: {
     avatar: require('../img/works/super_trunfo/super_trunfo_avatar.png'),
