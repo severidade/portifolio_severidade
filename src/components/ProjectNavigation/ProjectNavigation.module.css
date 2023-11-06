@@ -16,7 +16,7 @@
 .project_navigation_link_prev a, .project_navigation_link_next a{
   /* background-color: rgb(169, 255, 71); */
   display: flex;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
   align-items: start;
   flex-direction: column;
   gap: 20px;
