@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styles from './CardProject.module.css';
+import scrollToTop from '../../utils/scrollToTop';
 
 export default function CardProject({ project, projectImage }) {
   const [figureHeight, setFigureHeight] = useState(0);
@@ -24,7 +25,10 @@ export default function CardProject({ project, projectImage }) {
 
   return (
     <div className={styles.work} key={project.id}>
-      <Link to={`/projects/${project.slug}`}>
+      <Link 
+        to={`/projects/${project.slug}`}
+        onClick={scrollToTop}
+      >
         <figure
           className={styles.work_avatar}
           style={{ height: `${figureHeight}px` }}
