@@ -10,7 +10,7 @@ export default function ProjectNavigation({ previousProject, nextProject, projec
 
   useEffect(() => {
     const calculatefigureSize = () => {
-      const parentWidth = document.querySelector(`.${styles.projects}`).offsetWidth - 10;
+      const parentWidth = document.querySelector(`.${styles.projects}`).offsetWidth - 20;
       const height = parentWidth / 2 ;
       setfigureSize(height);
     };
