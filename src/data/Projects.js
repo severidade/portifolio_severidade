@@ -18,8 +18,8 @@ const Projects = [
     slug: 'vereda',
     short_description:'Landing Page responsiva em WordPress',
     introduction_description: 
-      '<p><strong>O Projeto Sustentabilidade na Vereda é uma iniciativa inovadora que busca melhorar a qualidade de vida das comunidades no Vale do Peruaçu por meio da implementação de tecnologias sociais de baixo custo.</strong></p>',
-    description: '<p> Com foco no uso de aquecedores ecológicos e fornos solares, o projeto visa auxiliar no orçamento familiar, promovendo a redução do consumo de gás e da conta de energia elétrica.</p><p>Desenvolvi uma <strong>Landing Page</strong> responsiva em WordPress, que junto a outras peças impressas, tinham como objetivo a divulgação do projeto.<p>Esse é um dos primeiros trabalhos web que fiz. Além de implementar e fazer o deploy de uma aplicação em <strong>WordPress</strong> tive o desafio de "domar" o CSS para criar os elementos diagonais vindos da peça impressa. Esse projeto foi o ponta pé para entender o funcionamento do <strong>z-index</strong> e dos <strong>Pseudo-Elements</strong> elementos do CSS.</p>',
+      '<p><strong>O Projeto Sustentabilidade na Vereda é uma iniciativa que busca melhorar a qualidade de vida das comunidades no Vale do Peruaçu por meio da implementação de tecnologias sociais de baixo custo.</strong></p>',
+    description: '<p> Com foco no uso de aquecedores ecológicos e fornos solares, o projeto visa auxiliar no orçamento familiar, promovendo a redução do consumo de gás e da conta de energia elétrica.</p><p>Esse é um dos primeiros trabalhos web que fiz. Além de implementar e fazer o deploy de uma aplicação em <strong>WordPress</strong> tive o desafio de "domar" o CSS para criar os elementos diagonais vindos da peça impressa. Esse projeto foi o ponta pé para entender o funcionamento do <strong>z-index</strong> e dos <strong>Pseudo-Elements</strong> elementos do CSS.</p>',
     img: Avatar,
     id: 2,
     deployLink: 'http://severidade.com.br/vereda/',
@@ -31,7 +31,7 @@ const Projects = [
     introduction_description: 
       '<p><strong>EasyCooking é uma aplicação React que funciona como um livro de receitas digital, permitindo que os usuários explorem uma variedade de receitas de coquetéis e refeições.</strong></p>',
     description:
-      '<p> Ao fornecer uma <strong>interface intuitiva</strong> e fácil de usar, os usuários podem <strong>descobrir novas receitas</strong>, seguir instruções passo a passo e até mesmo salvar suas receitas favoritas ou finalizadas para referência futura.</p> <p>Com a ajuda das APIs <strong>TheCocktailDB</strong> e <strong>TheMealDB</strong>, a aplicação oferece um amplo e diversificado banco de dados de receitas para tornar a experiência culinária ainda mais emocionante e inspiradora.</p><p>Para facilitar a descoberta de receitas desenvolvemos uma série de filtros por nacionalidade, ingredientes, nomes de receitas e muito mais.</p>',
+      '<p> Ao fornecer uma <strong>interface intuitiva</strong> e fácil de usar, os usuários podem <strong>descobrir novas receitas</strong>, seguir instruções passo a passo e até mesmo salvar suas receitas favoritas ou finalizadas para referência futura.</p> <p>Com a ajuda das APIs <strong>TheCocktailDB</strong> e <strong>TheMealDB</strong>, a aplicação oferece um amplo e diversificado banco de dados de receitas para tornar a experiência culinária ainda mais emocionante e inspiradora.</p><p>Para facilitar a <strong>descoberta de receitas desenvolvemos uma série de filtros</strong> por nacionalidade, ingredientes, nomes de receitas e muito mais.</p>',
     img: Avatar,
     id: 3,
     deployLink: 'http://receitas.severidade.com.br/', // Link de implantação
