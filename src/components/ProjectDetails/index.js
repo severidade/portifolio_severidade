@@ -42,18 +42,18 @@ export default function ProjectDetails({ currentProject, projectList }) {
   return (
 
     <div className={ styles.about_project }>
-
-      <figure 
-        className={ styles.image_projeto }
-        style={{ height: `${figureHeight}px` }}
-      >
-        {ProjectImages[id] && ProjectImages[id].gallery ? (
-          <img src={ProjectImages[id].gallery} alt={`📷 ${title} - Miniatura`} />
-        ) : (
-          <p>Sem 📷</p>
-        )}
-      </figure>
-
+      <div className={ styles.container_project_full_image }>
+        <figure 
+          className={ styles.image_projeto }
+          style={{ height: `${figureHeight}px` }}
+        >
+          {ProjectImages[id] && ProjectImages[id].gallery ? (
+            <img src={ProjectImages[id].gallery} alt={`📷 ${title} - Miniatura`} />
+          ) : (
+            <p>Sem 📷</p>
+          )}
+        </figure>
+      </div>
       <div className='project'>
         <h1 className={ styles.project_title }>{title}</h1>
         <div
@@ -86,7 +86,6 @@ export default function ProjectDetails({ currentProject, projectList }) {
           { parse(description) } 
         </div>
       </div>
-
 
       <ProjectNavigation 
         previousProject={ previousProject } 
