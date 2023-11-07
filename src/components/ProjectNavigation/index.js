@@ -40,7 +40,7 @@ export default function ProjectNavigation({ previousProject, nextProject, projec
             className={ styles.project_navigation_avatar}
             style={{ height: `${figureSize}px`, width: `${figureSize}px` }}
           >
-            {projectImages[previousProject.id] && projectImages[previousProject.id].gallery ? (
+            {projectImages[previousProject.id] && projectImages[previousProject.id].avatar ? (
               <img src={projectImages[previousProject.id].avatar} alt={`📷 ${previousProject.title } - Miniatura`} />
             ) : (
               <p>📷</p>
@@ -62,7 +62,7 @@ export default function ProjectNavigation({ previousProject, nextProject, projec
             className={ styles.project_navigation_avatar}
             style={{ height: `${figureSize}px`, width: `${figureSize}px` }}
           >
-            {projectImages[nextProject.id] && projectImages[nextProject.id].gallery ? (
+            {projectImages[nextProject.id] && projectImages[nextProject.id].avatar ? (
               <img src={projectImages[nextProject.id].avatar} alt={`📷 ${nextProject.title } - Miniatura`} />
             ) : (
               <p>📷</p>
