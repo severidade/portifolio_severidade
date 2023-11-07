@@ -24,7 +24,7 @@ export default function ProjectDetails({ currentProject, projectList }) {
 
   useEffect(() => {
     const calculateFigureHeight = () => {
-      const parentWidth = document.querySelector(`.${styles.image_projeto}`).offsetWidth;
+      const parentWidth = document.querySelector(`.${styles.container_project_full_image }`).offsetWidth;
       const windowHeight = window.innerHeight - 40;
       const sideLength = Math.min(parentWidth, windowHeight);
 
