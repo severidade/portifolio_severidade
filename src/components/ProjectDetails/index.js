@@ -7,7 +7,7 @@ import ProjectNavigation from '../ProjectNavigation'
 import ProjectImages from '../../data/ProjectImages'
 
 export default function ProjectDetails({ currentProject, projectList }) {
-  const [figureHeight, setFigureHeight] = useState(0);
+  const [figureHeight, setFigureHeight] = useState('100%');
   const { 
     title,
     description,
@@ -22,12 +22,16 @@ export default function ProjectDetails({ currentProject, projectList }) {
   const { previousProject, nextProject } = calculateProjectNavigation( slug_current, projectList );
   const parse = require('html-react-parser');
 
-  // console.log(`este é o id do projeto ${id}`)
   useEffect(() => {
     const calculateFigureHeight = () => {
       const parentWidth = document.querySelector(`.${styles.image_projeto}`).offsetWidth;
-      const height = parentWidth ;
-      setFigureHeight(height);
+      const windowHeight = window.innerHeight - 40;
+      const sideLength = Math.min(parentWidth, windowHeight);
+
+      console.log(`A largura da imagem é ${parentWidth} e a altura da tela é ${windowHeight} | o menor tamanho é ${sideLength}`);
+
+      setFigureHeight(sideLength);
+      
     };
 
     calculateFigureHeight();
@@ -45,7 +49,7 @@ export default function ProjectDetails({ currentProject, projectList }) {
       <div className={ styles.container_project_full_image }>
         <figure 
           className={ styles.image_projeto }
-          style={{ height: `${figureHeight}px` }}
+          style={{ height: `${figureHeight}px`, width: `${figureHeight}px` }}
         >
           {ProjectImages[id] && ProjectImages[id].gallery ? (
             <img src={ProjectImages[id].gallery} alt={`📷 ${title} - Miniatura`} />

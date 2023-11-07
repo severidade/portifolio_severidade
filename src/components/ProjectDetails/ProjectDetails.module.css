@@ -97,17 +97,24 @@
 @media screen and (min-width: 900px) and (max-width: 1350px) { } */
 
 @media screen and ( min-width : 1351px ) {
-  .about_project {
+  /* .about_project {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-row: auto;
-  }
+  } */
   .container_project_full_image {
-    border: solid 2px;
-    grid-column: 2 / 3 ;
-    grid-row: 1 / 3;
-    background-color: tomato;
+    /* position: fixed; */
+    /* width: 50vw; */
+    /* grid-column: 2 / 3;
+    grid-row: 1 / 3 ; */
   }
 
-
+  /* .project {
+    grid-column: 1 /2 ;
+    grid-row: 1/2;
+    padding: 0 5vw;
+  } */
+  .nav {
+    display: none;
+  }
 }
