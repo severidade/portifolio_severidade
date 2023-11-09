@@ -7,7 +7,7 @@ import ProjectNavigation from '../ProjectNavigation'
 import ProjectImages from '../../data/ProjectImages'
 
 export default function ProjectDetails({ currentProject, projectList }) {
-  const [figureHeight, setFigureHeight] = useState(0);
+  const [figureHeight, setFigureHeight] = useState('100%');
   const { 
     title,
     description,
@@ -22,12 +22,18 @@ export default function ProjectDetails({ currentProject, projectList }) {
   const { previousProject, nextProject } = calculateProjectNavigation( slug_current, projectList );
   const parse = require('html-react-parser');
 
-  // console.log(`este é o id do projeto ${id}`)
   useEffect(() => {
     const calculateFigureHeight = () => {
-      const parentWidth = document.querySelector(`.${styles.image_projeto}`).offsetWidth;
-      const height = parentWidth ;
-      setFigureHeight(height);
+      const containerProjectFullWidth = document.querySelector(`.${styles.container_project_full_width}`).offsetWidth;
+
+      // const windowWidth = window.innerWidth - 130;
+      const windowHeight = window.innerHeight - 40;
+      const sideLength = Math.min(containerProjectFullWidth, windowHeight);
+
+      // console.log(`A largura da imagem é ${containerProjectFullWidth}  ou ${windowWidth} e a altura da tela é ${windowHeight} | o menor tamanho é ${sideLength}`);
+
+      setFigureHeight(sideLength);
+      
     };
 
     calculateFigureHeight();
@@ -42,10 +48,10 @@ export default function ProjectDetails({ currentProject, projectList }) {
   return (
 
     <div className={ styles.about_project }>
-
+      <div className={ styles.container_project_full_width}></div>
       <figure 
         className={ styles.image_projeto }
-        style={{ height: `${figureHeight}px` }}
+        style={{ height: `${figureHeight}px`, width: `${figureHeight}px` }}
       >
         {ProjectImages[id] && ProjectImages[id].gallery ? (
           <img src={ProjectImages[id].gallery} alt={`📷 ${title} - Miniatura`} />
@@ -54,7 +60,7 @@ export default function ProjectDetails({ currentProject, projectList }) {
         )}
       </figure>
 
-      <div className='project'>
+      <div className={ styles.project }>
         <h1 className={ styles.project_title }>{title}</h1>
         <div
           className={ styles.introduction_description }
@@ -87,12 +93,14 @@ export default function ProjectDetails({ currentProject, projectList }) {
         </div>
       </div>
 
+      <div className={ styles.nav }>
 
-      <ProjectNavigation 
-        previousProject={ previousProject } 
-        nextProject={ nextProject } 
-        projectImages={ ProjectImages }
-      />
+        <ProjectNavigation 
+          previousProject={ previousProject } 
+          nextProject={ nextProject } 
+          projectImages={ ProjectImages }
+        />
+      </div>
   </div>
   );
 }
