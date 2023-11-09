@@ -54,7 +54,7 @@ export default function ProjectDetails({ currentProject, projectList }) {
         style={{ height: `${figureHeight}px`, width: `${figureHeight}px` }}
       >
         {ProjectImages[id] && ProjectImages[id].gallery ? (
-          <img src={ProjectImages[id].gallery} alt={`📷 ${title} - Miniatura`} />
+          <img src={ProjectImages[id].gallery[0]} alt={`📷 ${title} - full`} />
         ) : (
           <p>Sem 📷</p>
         )}

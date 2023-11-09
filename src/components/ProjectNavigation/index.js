@@ -10,8 +10,10 @@ export default function ProjectNavigation({ previousProject, nextProject, projec
 
   useEffect(() => {
     const calculatefigureSize = () => {
-      const parentWidth = document.querySelector(`.${styles.projects}`).offsetWidth - 20;
-      const height = parentWidth / 2 ;
+      const parentWidth = document.querySelector(`.${styles.projects}`).offsetWidth;
+      // const height = parentWidth / 2 ;
+      const height = window.innerWidth > 1500 ? parentWidth : (parentWidth - 20)/ 2;
+
       setfigureSize(height);
     };
 
@@ -77,7 +79,7 @@ export default function ProjectNavigation({ previousProject, nextProject, projec
           onClick={scrollToTop}
           className={ styles.find_out_more }
         >
-          Veja todos os projetos
+          + projetos
       </Link>
     </div>
   );
