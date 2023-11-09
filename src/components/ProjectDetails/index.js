@@ -24,11 +24,13 @@ export default function ProjectDetails({ currentProject, projectList }) {
 
   useEffect(() => {
     const calculateFigureHeight = () => {
-      const parentWidth = document.querySelector(`.${styles.container_project_full_image }`).offsetWidth;
-      const windowHeight = window.innerHeight - 40;
-      const sideLength = Math.min(parentWidth, windowHeight);
+      const containerProjectFullWidth = document.querySelector(`.${styles.container_project_full_width}`).offsetWidth;
 
-      console.log(`A largura da imagem é ${parentWidth} e a altura da tela é ${windowHeight} | o menor tamanho é ${sideLength}`);
+      // const windowWidth = window.innerWidth - 130;
+      const windowHeight = window.innerHeight - 40;
+      const sideLength = Math.min(containerProjectFullWidth, windowHeight);
+
+      // console.log(`A largura da imagem é ${containerProjectFullWidth}  ou ${windowWidth} e a altura da tela é ${windowHeight} | o menor tamanho é ${sideLength}`);
 
       setFigureHeight(sideLength);
       
@@ -46,19 +48,19 @@ export default function ProjectDetails({ currentProject, projectList }) {
   return (
 
     <div className={ styles.about_project }>
-      <div className={ styles.container_project_full_image }>
-        <figure 
-          className={ styles.image_projeto }
-          style={{ height: `${figureHeight}px`, width: `${figureHeight}px` }}
-        >
-          {ProjectImages[id] && ProjectImages[id].gallery ? (
-            <img src={ProjectImages[id].gallery} alt={`📷 ${title} - Miniatura`} />
-          ) : (
-            <p>Sem 📷</p>
-          )}
-        </figure>
-      </div>
-      <div className='project'>
+      <div className={ styles.container_project_full_width}></div>
+      <figure 
+        className={ styles.image_projeto }
+        style={{ height: `${figureHeight}px`, width: `${figureHeight}px` }}
+      >
+        {ProjectImages[id] && ProjectImages[id].gallery ? (
+          <img src={ProjectImages[id].gallery} alt={`📷 ${title} - Miniatura`} />
+        ) : (
+          <p>Sem 📷</p>
+        )}
+      </figure>
+
+      <div className={ styles.project }>
         <h1 className={ styles.project_title }>{title}</h1>
         <div
           className={ styles.introduction_description }
@@ -91,11 +93,14 @@ export default function ProjectDetails({ currentProject, projectList }) {
         </div>
       </div>
 
-      <ProjectNavigation 
-        previousProject={ previousProject } 
-        nextProject={ nextProject } 
-        projectImages={ ProjectImages }
-      />
+      <div className={ styles.nav }>
+
+        <ProjectNavigation 
+          previousProject={ previousProject } 
+          nextProject={ nextProject } 
+          projectImages={ ProjectImages }
+        />
+      </div>
   </div>
   );
 }
