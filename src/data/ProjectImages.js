@@ -8,23 +8,23 @@ const projectImages = {
   2: {
     avatar: require('../img/works/vereda/avatar_vereda.jpg'),
     gallery: [
-      require('../img/works/vereda/sustentabilidade.jpg'),
+      require('../img/works/vereda/vereda_full.png'),
     ],
   },
   3: {
     avatar: require('../img/works/app_receitas/app_receitas_avatar.png'),
     gallery: [
-      require('../img/works/app_receitas/app_receitas_avatar.png'),
+      require('../img/works/app_receitas/Receita_full.png'),
     ],
   },
   4: {
-    avatar: require('../img/works/the_box/box_avatar.png'),
+    avatar: require('../img/works/the_box/full.png'),
     gallery: [
-      require('../img/works/the_box/box_avatar.png'),
+      require('../img/works/the_box/full.png'),
     ],
   },
   5: {
-    avatar: require('../img/works/sistema_solar/solar_avatar.png'),
+    avatar: require('../img/works/sistema_solar/solar.png'),
     gallery: [
       require('../img/works/sistema_solar/solar.png'),
     ],
