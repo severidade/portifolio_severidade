@@ -48,3 +48,18 @@
   justify-content: center;
   margin-top: 30px;
 }
+
+@media screen and ( min-width : 1500px  ) {
+  .project_navigation {
+    /* width: 100%; */
+    padding: 20px;
+  }
+
+  .projects {
+    flex-direction: column;
+  }
+  
+  /* .find_out_more{
+    background: tomato;
+  } */
+}
