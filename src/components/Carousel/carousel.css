@@ -380,8 +380,6 @@
 }
 
 
-
-
 /* --------------fim do solar system ------------ */
 .slick-prev, .slick-next {
   display: none !important;
@@ -448,7 +446,7 @@
     height: var(--banner_height_desktop);
   }
 
-  .laje, .vereda, .easy_cooking, .the_box_blog, .solar_system, .bhl  {
+  .laje, .vereda, .easy_cooking, .the_box_blog, .solar_system, .bhl {
     height: var(--banner_height_desktop);
   }
 
