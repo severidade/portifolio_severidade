@@ -354,7 +354,7 @@
 /* -------------- SLIDE bhl ------------ */
 .bhl {
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   display: grid !important;
   grid-template-columns: var(--grid_nav_width) repeat(2, 2fr);
   grid-template-rows: auto;
@@ -448,7 +448,7 @@
     height: var(--banner_height_desktop);
   }
 
-  .laje, .vereda, .easy_cooking, .the_box_blog, .solar_system  {
+  .laje, .vereda, .easy_cooking, .the_box_blog, .solar_system, .bhl  {
     height: var(--banner_height_desktop);
   }
 
