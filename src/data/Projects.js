@@ -111,6 +111,18 @@ const Projects = [
     deployLink: 'http://wallet.severidade.com.br/',
     githubLink: 'https://github.com/severidade/wallet_project',
   },
+  {
+    title: 'Biodiversity Knowledge',
+    slug: 'bhl',
+    short_description:'Redesenho da plataforma Biodiversity Heritage Library.',
+    introduction_description: 
+      '<p>A Biblioteca de Patrimônio da Biodiversidade (BHL) é a maior biblioteca digital de acesso aberto do mundo para literatura e arquivos sobre biodiversidade.</p>',
+    description:'<p>Minha contribuição neste projeto consistiu na <strong>recriação da página da BHL</strong>. Nessa abordagem renovada, introduzi <strong>soluções de usabilidade</strong> que foram desenvolvidas por mim, além de ter sido responsável por todo o <strong>desenvolvimento do front-end</strong> utilizando tecnologias como <strong>HTML</strong>, <strong>CSS</strong> e <strong>jQuery</strong>.</p>',
+    img: Avatar,
+    id: 10,
+    deployLink: 'http://bhl.severidade.com.br/',
+    githubLink: 'https://github.com/severidade/biodiversity_heritage_library',
+  },
 ];
 
 export default Projects; 

@@ -349,6 +349,21 @@
   transform: translateY(-50px);
 }
 
+/* -------------- SLIDE the box ------------ */
+
+/* -------------- SLIDE bhl ------------ */
+.bhl {
+  width: 100%;
+  height: 70vh;
+  display: grid !important;
+  grid-template-columns: var(--grid_nav_width) repeat(2, 2fr);
+  grid-template-rows: auto;
+  overflow: hidden;
+  background: url(./img/bhl/bhl.jpg) no-repeat fixed #f3f1f1;
+  background-position: left center;
+  background-size: cover;
+}
+
 
 @media screen and ( min-width : 900px ) {
 

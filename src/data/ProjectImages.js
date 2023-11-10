@@ -53,6 +53,12 @@ const projectImages = {
       require('../img/works/wallet/wallet.png'),
     ],
   },
+  10: {
+    avatar: require('../img/works/bhl/bhl.jpg'),
+    gallery: [
+      require('../img/works/bhl/bhl.jpg'),
+    ],
+  },
 };
 
 export default projectImages;
