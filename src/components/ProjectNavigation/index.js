@@ -6,25 +6,51 @@ import styles from './ProjectNavigation.module.css';
 
 export default function ProjectNavigation({ previousProject, nextProject, projectImages }) {
 
-  const [figureSize, setfigureSize] = useState(0);
+  const [tumbWidth, setTumbWidth] = useState(0);
+  const [tumbHeight, setTumbHeight] = useState(0)
 
-  useEffect(() => {
-    const calculatefigureSize = () => {
+  // useEffect(() => {
+  //   const calculatetumbWidth = () => {
+  //     const parentWidth = document.querySelector(`.${styles.projects}`).offsetWidth;
+  //     // const height = parentWidth / 2 ;
+  //     const height = window.innerWidth > 1400 ? parentWidth : (parentWidth - 20)/ 2;
+
+  //     setTumbWidth(height);
+  //   };
+
+  //   calculatetumbWidth();
+
+  //   window.addEventListener('resize', calculatetumbWidth);
+
+  //   return () => {
+  //     window.removeEventListener('resize', calculatetumbWidth);
+  //   };
+  // }, []);
+  useEffect (() =>{
+    const calculatetumbWidth = () => {
       const parentWidth = document.querySelector(`.${styles.projects}`).offsetWidth;
-      // const height = parentWidth / 2 ;
-      const height = window.innerWidth > 1500 ? parentWidth : (parentWidth - 20)/ 2;
 
-      setfigureSize(height);
+      let altura;
+      let largura;
+
+      if (window.innerWidth >= 600 && window.innerWidth <= 1399) {
+        altura = ((parentWidth - 20) / 4.5);
+        largura = (parentWidth - 20) / 2;
+      } else {
+        altura = window.innerWidth > 1400 ? parentWidth : (parentWidth - 20)/ 2;
+        largura = window.innerWidth > 1400 ? parentWidth : (parentWidth - 20)/ 2;
+      }
+
+      setTumbWidth(largura)
+      setTumbHeight(altura)
     };
 
-    calculatefigureSize();
-
-    window.addEventListener('resize', calculatefigureSize);
-
+    calculatetumbWidth();
+    window.addEventListener('resize', calculatetumbWidth);
     return () => {
-      window.removeEventListener('resize', calculatefigureSize);
+      window.removeEventListener('resize', calculatetumbWidth);
     };
-  }, []);
+  },[]);
 
 
   return (
@@ -40,7 +66,7 @@ export default function ProjectNavigation({ previousProject, nextProject, projec
           >
           <figure 
             className={ styles.project_navigation_avatar}
-            style={{ height: `${figureSize}px`, width: `${figureSize}px` }}
+            style={{ height: `${tumbHeight}px`, width: `${tumbWidth}px` }}
           >
             {projectImages[previousProject.id] && projectImages[previousProject.id].avatar ? (
               <img src={projectImages[previousProject.id].avatar} alt={`📷 ${previousProject.title } - Miniatura`} />
@@ -62,7 +88,7 @@ export default function ProjectNavigation({ previousProject, nextProject, projec
           >
          <figure 
             className={ styles.project_navigation_avatar}
-            style={{ height: `${figureSize}px`, width: `${figureSize}px` }}
+            style={{ height: `${tumbHeight}px`, width: `${tumbWidth}px` }}
           >
             {projectImages[nextProject.id] && projectImages[nextProject.id].avatar ? (
               <img src={projectImages[nextProject.id].avatar} alt={`📷 ${nextProject.title } - Miniatura`} />

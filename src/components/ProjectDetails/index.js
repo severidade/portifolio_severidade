@@ -8,6 +8,8 @@ import ProjectImages from '../../data/ProjectImages'
 
 export default function ProjectDetails({ currentProject, projectList }) {
   const [figureHeight, setFigureHeight] = useState('100%');
+  const [figureWidth, setFigureWidth] = useState('100%');
+
   const { 
     title,
     description,
@@ -26,20 +28,26 @@ export default function ProjectDetails({ currentProject, projectList }) {
     const calculateFigureHeight = () => {
       const containerProjectFullWidth = document.querySelector(`.${styles.container_project_full_width}`).offsetWidth;
 
-      // const windowWidth = window.innerWidth - 130;
-      const windowHeight = window.innerHeight - 40;
-      const sideLength = Math.min(containerProjectFullWidth, windowHeight);
+      let altura;
+      let largura;
 
-      // console.log(`A largura da imagem é ${containerProjectFullWidth}  ou ${windowWidth} e a altura da tela é ${windowHeight} | o menor tamanho é ${sideLength}`);
+      if (window.innerWidth >= 700 && window.innerWidth <= 1399) {
+        altura = window.innerWidth / 2.5;
+        largura = containerProjectFullWidth
+      } else {
+        // Fora a condição acima as figuras são quadradas tendo a menor dimensão como referencia
+        const windowHeight = window.innerHeight - 40;
+        altura = Math.min(containerProjectFullWidth, windowHeight);
+        largura = Math.min(containerProjectFullWidth, windowHeight);
+      }
 
-      setFigureHeight(sideLength);
+      setFigureHeight(altura);
+      setFigureWidth(largura);
       
     };
 
     calculateFigureHeight();
-
     window.addEventListener('resize', calculateFigureHeight);
-
     return () => {
       window.removeEventListener('resize', calculateFigureHeight);
     };
@@ -51,7 +59,7 @@ export default function ProjectDetails({ currentProject, projectList }) {
       <div className={ styles.container_project_full_width}></div>
       <figure 
         className={ styles.image_projeto }
-        style={{ height: `${figureHeight}px`, width: `${figureHeight}px` }}
+        style={{ height: `${figureHeight}px`, width: `${figureWidth}px` }}
       >
         {ProjectImages[id] && ProjectImages[id].gallery ? (
           <img src={ProjectImages[id].gallery[0]} alt={`📷 ${title} - full`} />
