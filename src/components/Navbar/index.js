@@ -102,7 +102,7 @@ export default function Navbar(props) {
         </button>
         <NavLink to="/" onClick={toggleMenu}>Home</NavLink>
         <NavLink to="/projects" onClick={toggleMenu}>Projetos</NavLink>
-        <NavLink to="/contact" onClick={toggleMenu}>Contato</NavLink>
+        {/* <NavLink to="/contact" onClick={toggleMenu}>Contato</NavLink> */}
       </nav>
     </>
   )
