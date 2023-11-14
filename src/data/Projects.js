@@ -6,9 +6,9 @@ const Projects = [
     slug: 'laje',
     short_description:'Página com animações e experimentações de transição usando CSS e Javascript',
     introduction_description: 
-      '<p><strong>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</strong></p>',
+      '<p>Página estática para este que pose ser considerado um "anti bloco de carnaval". </p>',
     description:
-      '<p>al sit amet fermentum lorem lore</p>',
+      '<p>Esta é uma das minhas <strong>primeiras incursões</strong> no desenvolvimento web, onde explorei <strong>transições CSS</strong> e <strong>Javascript</strong>. Desde o início, a <strong>responsividade</strong> era uma preocupação, assim como o desejo de criar <strong>algo envolvente e divertido</strong>, alinhado com o tema proposto. Apesar de ser um trabalho antigo, desenvolvido de maneira autodidata, sinto um orgulho por tê-lo realizado.</p>',
     img: Avatar,
     id: 1,
     deployLink: 'https://severidade.com.br/laje/',
@@ -26,6 +26,7 @@ const Projects = [
   },
   {
     title: 'Easy cooking',
+    
     slug: 'easycooking',
     short_description:'Aplicação React que funciona como um livro de receitas digital.',
     introduction_description: 
