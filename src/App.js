@@ -22,16 +22,19 @@ export default function App() {
     ReactGA.send({ hitType: 'pageview', page: window.location.pathname + window.location.search });
 
     // Adicione um listener de histórico para rastrear mudanças de rota
-    const historyListener = (location) => {
-      ReactGA.send({ hitType: 'pageview', page: location.pathname + location.search });
+    const historyListener = (event) => {
+      ReactGA.send({ hitType: 'pageview', page: event.location.pathname + event.location.search });
     };
 
     // Adicione o listener ao histórico de navegação
-    const unlisten = navigate(historyListener);
+    const unlisten = navigate({ history: historyListener });
 
     // Remova o listener quando o componente for desmontado
     return () => {
-      unlisten();
+      // Certifique-se de verificar se unlisten é uma função antes de chamá-la
+      if (typeof unlisten === 'function') {
+        unlisten();
+      }
     };
   }, [navigate]);
 
