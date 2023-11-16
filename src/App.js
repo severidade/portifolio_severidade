@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { Routes, Route, useNavigate } from 'react-router-dom';
+import ReactGA from 'react-ga4';
 import './Reset.css';
-import { Routes, Route } from 'react-router-dom';
 import './App.css';
 
 import Home from './pages/Home';
@@ -11,6 +12,30 @@ import Error from './pages/Error';
 
 
 export default function App(){
+  const navigate = useNavigate();
+  const TRACKING_ID = 'G-V5SVPDQ6F7'
+
+  useEffect(() => {
+    // Inicialize o Google Analytics
+    ReactGA.initialize(TRACKING_ID);
+
+    // Rastreie a página inicial quando o aplicativo é carregado
+    ReactGA.pageview(window.location.pathname + window.location.search);
+
+    // Adicione um listener de histórico para rastrear mudanças de rota
+    const historyListener = (location) => {
+      ReactGA.pageview(location.pathname + location.search);
+    };
+
+    // Adicione o listener ao histórico de navegação
+    const unlisten = navigate(historyListener);
+
+    // Remova o listener quando o componente for desmontado
+    return () => {
+      unlisten();
+    };
+  }, [navigate]);
+
   return (
     <Routes>
       <Route path="/" element={<Home />} />
