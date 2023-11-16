@@ -10,21 +10,20 @@ import Project from './pages/ProjectPage';
 // import Contact from './pages/Contact';
 import Error from './pages/Error';
 
-
-export default function App(){
+export default function App() {
   const navigate = useNavigate();
-  const TRACKING_ID = 'G-V5SVPDQ6F7'
+  const TRACKING_ID = 'G-V5SVPDQ6F7';
 
   useEffect(() => {
     // Inicialize o Google Analytics
     ReactGA.initialize(TRACKING_ID);
 
     // Rastreie a página inicial quando o aplicativo é carregado
-    ReactGA.pageview(window.location.pathname + window.location.search);
+    ReactGA.send({ hitType: 'pageview', page: window.location.pathname + window.location.search });
 
     // Adicione um listener de histórico para rastrear mudanças de rota
     const historyListener = (location) => {
-      ReactGA.pageview(location.pathname + location.search);
+      ReactGA.send({ hitType: 'pageview', page: location.pathname + location.search });
     };
 
     // Adicione o listener ao histórico de navegação
@@ -39,10 +38,10 @@ export default function App(){
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path='/projects' element= {<Projects />} />
-      <Route path='/projects/:project' element= {<Project />} />
-      {/* <Route path='/contact' element= {<Contact />} /> */}
-      <Route path="*" element={<Error /> } />
+      <Route path='/projects' element={<Projects />} />
+      <Route path='/projects/:project' element={<Project />} />
+      {/* <Route path='/contact' element={<Contact />} /> */}
+      <Route path="*" element={<Error />} />
     </Routes>
   );
 }
