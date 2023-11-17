@@ -51,7 +51,6 @@
 
 @media screen and ( min-width : 1400px  ) {
   .project_navigation {
-    /* width: 100%; */
     padding: 20px;
   }
 
@@ -59,7 +58,4 @@
     flex-direction: column;
   }
   
-  /* .find_out_more{
-    background: tomato;
-  } */
 }

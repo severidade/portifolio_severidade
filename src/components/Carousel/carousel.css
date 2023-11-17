@@ -329,10 +329,6 @@
   object-fit: cover;
   transform: rotate(90deg);
 }
- 
-/* .banner_solar_system { 
-  background-color: tomato;
-} */
 
 .logo_solar {
   color: white;
@@ -343,7 +339,6 @@
   text-align: center;
   text-shadow: -2px 0 2px #03051f;;
   text-transform: uppercase;
-  /* background-color: tomato; */
   position: absolute;
   top: 35vh;
   transform: translateY(-50px);

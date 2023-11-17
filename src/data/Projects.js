@@ -6,7 +6,7 @@ const Projects = [
     slug: 'laje',
     short_description:'Página com animações e experimentações de transição usando CSS e Javascript',
     introduction_description: 
-      '<p>Página estática para este que pose ser considerado um "anti bloco de carnaval". </p>',
+      '<p>Página estática para este que pode ser considerado um "anti bloco de carnaval".</p>',
     description:
       '<p>Esta é uma das minhas <strong>primeiras incursões</strong> no desenvolvimento web, onde explorei <strong>transições CSS</strong> e <strong>Javascript</strong>. Desde o início, a <strong>responsividade</strong> era uma preocupação, assim como o desejo de criar <strong>algo envolvente e divertido</strong>, alinhado com o tema proposto. Apesar de ser um trabalho antigo, desenvolvido de maneira autodidata, sinto um orgulho por tê-lo realizado.</p>',
     img: Avatar,
