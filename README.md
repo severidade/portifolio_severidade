@@ -14,31 +14,31 @@ Com uma sólida base como Designer Gráfico, migrei para a área de tecnologia, 
 <details>
     <summary><strong>React</strong></summary>
 
-* O projeto utiliza o React como biblioteca principal para o desenvolvimento de interfaces front-end. O React permite a construção de componentes reutilizáveis, facilitando a criação de uma UI dinâmica e responsiva.
+O projeto utiliza o React como biblioteca principal para o desenvolvimento de interfaces front-end. O React permite a construção de componentes reutilizáveis, facilitando a criação de uma UI dinâmica e responsiva.
 </details>
 
 <details>
     <summary><strong>React Router DOM</strong></summary>
 
-* O React Router DOM é empregado para facilitar a navegação entre diferentes páginas no aplicativo, garantindo uma experiência de usuário suave e amigável.
+O React Router DOM é empregado para facilitar a navegação entre diferentes páginas no aplicativo, garantindo uma experiência de usuário suave e amigável.
 </details>
 
 <details>
     <summary><strong>React Ga4</strong></summary>
 
-* Para análise de dados e rastreamento, o React Ga4 é incorporado ao projeto. Ele oferece recursos avançados de análise e insights sobre o comportamento do usuário, contribuindo para aprimorar a usabilidade.
+Para análise de dados e rastreamento, o React Ga4 é incorporado ao projeto. Ele oferece recursos avançados de análise e insights sobre o comportamento do usuário, contribuindo para aprimorar a usabilidade.
 </details>
 
 <details>
     <summary><strong>React Player</strong></summary>
 
-* A inclusão da biblioteca React Player permite a fácil integração e reprodução de vídeos no aplicativo, enriquecendo a experiência do usuário com conteúdo multimídia.
+A inclusão da biblioteca React Player permite a fácil integração e reprodução de vídeos no aplicativo, enriquecendo a experiência do usuário com conteúdo multimídia.
 </details>
 
 <details>
     <summary><strong>React Slick e Slick Carousel</strong></summary>
 
-* React Slick e Slick Carousel são utilizados para criar carrosséis de imagens de forma elegante e responsiva, adicionando um toque visualmente atraente à interface.
+React Slick e Slick Carousel são utilizados para criar carrosséis de imagens de forma elegante e responsiva, adicionando um toque visualmente atraente à interface.
 </details>
 
 
