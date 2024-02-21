@@ -42,7 +42,7 @@ React Slick e Slick Carousel são utilizados para criar carrosséis de imagens d
 </details>
 
 
-
+Deploy 21 de fevereiro
 
 
 ### Contato
