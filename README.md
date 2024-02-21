@@ -41,10 +41,6 @@ A inclusão da biblioteca React Player permite a fácil integração e reproduç
 React Slick e Slick Carousel são utilizados para criar carrosséis de imagens de forma elegante e responsiva, adicionando um toque visualmente atraente à interface.
 </details>
 
-
-Deploy 21 de fevereiro
-
-
 ### Contato
 LinkedIn: [www.linkedin.com/in/severidade/](https://www.linkedin.com/in/severidade/)
 
