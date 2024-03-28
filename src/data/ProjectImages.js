@@ -25,9 +25,7 @@ const projectImages = {
   },
   5: {
     avatar: require('../img/works/sistema_solar/solar.png'),
-    gallery: [
-      require('../img/works/sistema_solar/solar.png'),
-    ],
+    url: 'https://www.youtube.com/watch?v=ztVV54sPOns&t=609s',
   },
   6: {
     avatar: require('../img/works/shopping_cart/shoppin_cart_avatar.png'),

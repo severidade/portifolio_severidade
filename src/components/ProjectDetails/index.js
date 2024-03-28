@@ -6,6 +6,8 @@ import calculateProjectNavigation from '../../utils/calculateProjectNavigation';
 import ProjectNavigation from '../ProjectNavigation'
 import ProjectImages from '../../data/ProjectImages'
 
+import ReactPlayer from 'react-player';
+
 export default function ProjectDetails({ currentProject, projectList }) {
   const [figureHeight, setFigureHeight] = useState('100%');
   const [figureWidth, setFigureWidth] = useState('100%');
@@ -57,16 +59,35 @@ export default function ProjectDetails({ currentProject, projectList }) {
 
     <div className={ styles.about_project }>
       <div className={ styles.container_project_full_width}></div>
-      <figure 
-        className={ styles.image_projeto }
+
+      <div 
+        className={styles.image_projeto}
         style={{ height: `${figureHeight}px`, width: `${figureWidth}px` }}
       >
-        {ProjectImages[id] && ProjectImages[id].gallery ? (
-          <img src={ProjectImages[id].gallery[0]} alt={`📷 ${title} - full`} />
-        ) : (
-          <p>Sem 📷</p>
-        )}
-      </figure>
+        {(() => {
+          if (ProjectImages[id] && ProjectImages[id].gallery) {
+            return (
+              <img src={ProjectImages[id].gallery[0]} alt={`📷 ${title} - full`} />
+            );
+          } else if (ProjectImages[id] && ProjectImages[id].url) {
+            return (
+              <ReactPlayer
+                className='video_background'
+                url={ProjectImages[id].url}
+                playing
+                loop
+                muted
+                controls={false}
+                speed="2"
+                width="180%"
+                height="150%"
+              />
+            );
+          } else {
+            return <p>Sem imagem de destaque pra esse projeto</p>;
+          }
+        })()}
+      </div>
 
       <div className={ styles.project }>
         <h1 className={ styles.project_title }>{title}</h1>
