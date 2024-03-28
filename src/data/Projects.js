@@ -26,7 +26,6 @@ const Projects = [
   },
   {
     title: 'Easy cooking',
-    
     slug: 'easycooking',
     short_description:'Aplicação React que funciona como um livro de receitas digital.',
     introduction_description: 
