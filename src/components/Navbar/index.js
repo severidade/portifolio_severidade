@@ -111,3 +111,6 @@ export default function Navbar(props) {
 Navbar.propTypes = {
   content: PropTypes.object.isRequired,
 };
+
+
+// menu aberto nao pode ter scrcoll

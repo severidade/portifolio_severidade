@@ -57,6 +57,12 @@ const projectImages = {
       require('../img/works/bhl/bhl.jpg'),
     ],
   },
+  11: {
+    avatar: require('../img/works/barro/barro_avatar.png'),
+    gallery: [
+      require('../img/works/barro/barro_post.png'),
+    ],
+  },
 };
 
 export default projectImages;
