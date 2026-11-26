@@ -1,19 +1,19 @@
 import Avatar from '../img/avatar.png'
 
 const Projects = [
-  {
-    title: 'BARRO',
-    slug: 'barro',
-    short_description:'E-commerce desenvolvido em React com gerenciamento de conteúdo integrado ao Sanity.io.',
-    introduction_description: 
-      '<p>E-commerce desenvolvido em React com gerenciamento de conteúdo integrado ao Sanity.io.</p>',
-    description:
-      '<p>Neste projeto, explorei a integração de um front-end em React com o Sanity.io como CMS headless, permitindo gerenciar o catálogo de produtos de forma dinâmica e desacoplada. Para garantir uma navegação fluida entre a lista de favoritos e o carrinho de compras, utilizei o Redux no gerenciamento de estado global. O foco foi unir uma arquitetura escalável e responsiva a uma experiência de compra limpa, cuidando tanto da estrutura técnica quanto da apresentação visual.</p>',
-    img: Avatar,
-    id: 11,
-    deployLink: 'https://barro.severidade.com.br/', // Link de implantação
-    githubLink: 'https://github.com/severidade/barro_store', // Link do GitHub
-  },
+  // {
+  //   title: 'BARRO',
+  //   slug: 'barro',
+  //   short_description:'E-commerce desenvolvido em React com gerenciamento de conteúdo integrado ao Sanity.io.',
+  //   introduction_description: 
+  //     '<p>E-commerce desenvolvido em React com gerenciamento de conteúdo integrado ao Sanity.io.</p>',
+  //   description:
+  //     '<p>Neste projeto, explorei a integração de um front-end em React com o Sanity.io como CMS headless, permitindo gerenciar o catálogo de produtos de forma dinâmica e desacoplada. Para garantir uma navegação fluida entre a lista de favoritos e o carrinho de compras, utilizei o Redux no gerenciamento de estado global. O foco foi unir uma arquitetura escalável e responsiva a uma experiência de compra limpa, cuidando tanto da estrutura técnica quanto da apresentação visual.</p>',
+  //   img: Avatar,
+  //   id: 11,
+  //   deployLink: 'https://barro.severidade.com.br/', // Link de implantação
+  //   githubLink: 'https://github.com/severidade/barro_store', // Link do GitHub
+  // },
   
   {
     title: 'L.A.J.E',
