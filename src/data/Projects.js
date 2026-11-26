@@ -2,6 +2,20 @@ import Avatar from '../img/avatar.png'
 
 const Projects = [
   {
+    title: 'BARRO',
+    slug: 'barro',
+    short_description:'E-commerce desenvolvido em React com gerenciamento de conteúdo integrado ao Sanity.io.',
+    introduction_description: 
+      '<p>E-commerce desenvolvido em React com gerenciamento de conteúdo integrado ao Sanity.io.</p>',
+    description:
+      '<p>Neste projeto, explorei a integração de um front-end em React com o Sanity.io como CMS headless, permitindo gerenciar o catálogo de produtos de forma dinâmica e desacoplada. Para garantir uma navegação fluida entre a lista de favoritos e o carrinho de compras, utilizei o Redux no gerenciamento de estado global. O foco foi unir uma arquitetura escalável e responsiva a uma experiência de compra limpa, cuidando tanto da estrutura técnica quanto da apresentação visual.</p>',
+    img: Avatar,
+    id: 11,
+    deployLink: 'https://barro.severidade.com.br/', // Link de implantação
+    githubLink: 'https://github.com/severidade/barro_store', // Link do GitHub
+  },
+  
+  {
     title: 'L.A.J.E',
     slug: 'laje',
     short_description:'Página com animações e experimentações de transição usando CSS e Javascript',
@@ -24,6 +38,19 @@ const Projects = [
     id: 2,
     deployLink: 'http://severidade.com.br/vereda/',
   },
+  // {
+  //   title: 'fddfdfd',
+  //   slug: 'easycooking',
+  //   short_description:'novo texto',
+  //   introduction_description: 
+  //     '<p>produzir texto</p>',
+  //   description:
+  //     '<p> produzir texto</p>',
+  //   img: Avatar,
+  //   id: 11,
+  //   deployLink: 'https://barro.severidade.com.br/', // Link de implantação
+  //   githubLink: 'https://github.com/severidade/receitas_app', // Link do GitHub
+  // },
   {
     title: 'Easy cooking',
     slug: 'easycooking',
@@ -123,6 +150,7 @@ const Projects = [
     deployLink: 'http://bhl.severidade.com.br/',
     githubLink: 'https://github.com/severidade/biodiversity_heritage_library',
   },
+
 ];
 
 export default Projects; 

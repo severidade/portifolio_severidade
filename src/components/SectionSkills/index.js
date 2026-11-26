@@ -15,8 +15,8 @@ export default function SectionSkills(props) {
       <p> { content.skills.front_end } </p>
       <h3 className={ styles.skill }><strong>Back-end</strong></h3>
       <p> { content.skills.back_end } </p>
-      <h3 className={ styles.skill }><strong>Outros</strong></h3>
-      <p> { content.skills.others } </p>
+      <h3 className={ styles.skill }><strong>Design</strong></h3>
+      <p> { content.skills.design } </p>
 
       <a
         href={curriculo}

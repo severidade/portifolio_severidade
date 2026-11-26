@@ -28,7 +28,7 @@ const Content = {
   skills: {
     front_end: "HTML5, CSS3, Javascript, React, Redux e Testes Automatizados com RTL.",
     back_end: "MySQL, MongoDB, Node.JS",
-    others: "UI/UX Design, Git/Github, Figma, Photoshop, Ilustrator, Slack, Desenvolvimento ágil (Notion, Trello)"
+    design: "UI/UX Design, Git/Github, Figma, Photoshop, Ilustrator, Slack, Desenvolvimento ágil (Notion, Trello)",
   }
 }
 
